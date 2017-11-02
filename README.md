@@ -1,6 +1,6 @@
 
 # Projeto de Sistemas de Informação - Sistema de Papelaria
-<p align="center"  ><strong>Projeto de Sistema de informação</strong></p>
+<p > É um sistema de papelaria feito com a <strong>Linguagem VB.Net</strong> Feito por LucasDMonteiro e LeonardoNunesBeda da FATEC São Caetano do Sul, Curso ADS</p>
 <br>
 <ul>
 	<li><b>Obs 1</b>: Utilizar Visual Studio 2017.</li>
