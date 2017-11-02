@@ -24,6 +24,7 @@ Partial Class FormLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.gb_login = New System.Windows.Forms.GroupBox()
+        Me.Lbl_acesso = New System.Windows.Forms.Label()
         Me.lbl_senha = New System.Windows.Forms.Label()
         Me.btn_entrar = New System.Windows.Forms.Button()
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
@@ -34,7 +35,6 @@ Partial Class FormLogin
         Me.txt_senha = New System.Windows.Forms.TextBox()
         Me.txt_user = New System.Windows.Forms.TextBox()
         Me.label2 = New System.Windows.Forms.Label()
-        Me.Lbl_acesso = New System.Windows.Forms.Label()
         Me.gb_login.SuspendLayout()
         Me.groupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -58,6 +58,15 @@ Partial Class FormLogin
         Me.gb_login.TabIndex = 5
         Me.gb_login.TabStop = False
         Me.gb_login.Text = "Autenticação"
+        '
+        'Lbl_acesso
+        '
+        Me.Lbl_acesso.AutoSize = True
+        Me.Lbl_acesso.Location = New System.Drawing.Point(126, 147)
+        Me.Lbl_acesso.Name = "Lbl_acesso"
+        Me.Lbl_acesso.Size = New System.Drawing.Size(33, 13)
+        Me.Lbl_acesso.TabIndex = 9
+        Me.Lbl_acesso.Text = "None"
         '
         'lbl_senha
         '
@@ -165,15 +174,6 @@ Partial Class FormLogin
         Me.label2.Size = New System.Drawing.Size(41, 13)
         Me.label2.TabIndex = 2
         Me.label2.Text = "Senha:"
-        '
-        'Lbl_acesso
-        '
-        Me.Lbl_acesso.AutoSize = True
-        Me.Lbl_acesso.Location = New System.Drawing.Point(126, 147)
-        Me.Lbl_acesso.Name = "Lbl_acesso"
-        Me.Lbl_acesso.Size = New System.Drawing.Size(33, 13)
-        Me.Lbl_acesso.TabIndex = 9
-        Me.Lbl_acesso.Text = "None"
         '
         'FormLogin
         '
