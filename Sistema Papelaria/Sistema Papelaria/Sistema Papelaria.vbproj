@@ -54,6 +54,7 @@
     <Reference Include="System.Activities.Core.Presentation" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -198,6 +199,12 @@
     <Compile Include="FormStatus.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_CadastrarCompras.Designer.vb">
+      <DependentUpon>Form_CadastrarCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastrarCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_CadastrarProdutos.Designer.vb">
       <DependentUpon>Form_CadastrarProdutos.vb</DependentUpon>
     </Compile>
@@ -214,6 +221,12 @@
       <DependentUpon>Form_CadastroUsuario.vb</DependentUpon>
     </Compile>
     <Compile Include="Form_CadastroUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CarregarCompras.Designer.vb">
+      <DependentUpon>Form_CarregarCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CarregarCompras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MOD_CONEX.vb" />
@@ -246,6 +259,9 @@
     <EmbeddedResource Include="FormStatus.resx">
       <DependentUpon>FormStatus.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastrarCompras.resx">
+      <DependentUpon>Form_CadastrarCompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_CadastrarProdutos.resx">
       <DependentUpon>Form_CadastrarProdutos.vb</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +270,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CadastroUsuario.resx">
       <DependentUpon>Form_CadastroUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CarregarCompras.pt-BR.resx">
+      <DependentUpon>Form_CarregarCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CarregarCompras.resx">
+      <DependentUpon>Form_CarregarCompras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
