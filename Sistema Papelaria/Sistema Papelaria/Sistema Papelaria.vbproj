@@ -173,12 +173,6 @@
     <Import Include="System.Xml.Xsl" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formcadastro_conta.Designer.vb">
-      <DependentUpon>Formcadastro_conta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formcadastro_conta.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -204,10 +198,22 @@
     <Compile Include="FormStatus.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_CadastroFornecedor.Designer.vb">
-      <DependentUpon>Form_CadastroFornecedor.vb</DependentUpon>
+    <Compile Include="Form_CadastrarProdutos.Designer.vb">
+      <DependentUpon>Form_CadastrarProdutos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_CadastroFornecedor.vb">
+    <Compile Include="Form_CadastrarProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadastroForn.Designer.vb">
+      <DependentUpon>Form_CadastroForn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastroForn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadastroUsuario.Designer.vb">
+      <DependentUpon>Form_CadastroUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastroUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MOD_CONEX.vb" />
@@ -228,9 +234,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formcadastro_conta.resx">
-      <DependentUpon>Formcadastro_conta.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +245,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStatus.resx">
       <DependentUpon>FormStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastrarProdutos.resx">
+      <DependentUpon>Form_CadastrarProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastroForn.resx">
+      <DependentUpon>Form_CadastroForn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastroUsuario.resx">
+      <DependentUpon>Form_CadastroUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

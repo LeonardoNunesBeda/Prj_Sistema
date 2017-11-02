@@ -32,11 +32,22 @@ Partial Class FormMenu
         Me.EncerrarSessãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.dgv_forn = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_nome = New System.Windows.Forms.Label()
-        Me.dgv_forn = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_prod = New System.Windows.Forms.DataGridView()
+        Me.Cod_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nome_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Contato = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CNPJ = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Responsavel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Cod_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nome_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fornecedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgv_forn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,7 +60,7 @@ Partial Class FormMenu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManutençãoDeContasToolStripMenuItem, Me.ClienteToolStripMenuItem, Me.EncerrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(860, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1066, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -109,10 +120,19 @@ Partial Class FormMenu
         Me.GroupBox1.Controls.Add(Me.dgv_forn)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 148)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(384, 254)
+        Me.GroupBox1.Size = New System.Drawing.Size(503, 409)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Fornecedores"
+        '
+        'dgv_forn
+        '
+        Me.dgv_forn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_forn.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cod_Forn, Me.Nome_Forn, Me.Contato, Me.CNPJ, Me.Responsavel})
+        Me.dgv_forn.Location = New System.Drawing.Point(6, 19)
+        Me.dgv_forn.Name = "dgv_forn"
+        Me.dgv_forn.Size = New System.Drawing.Size(491, 384)
+        Me.dgv_forn.TabIndex = 0
         '
         'Label1
         '
@@ -134,20 +154,12 @@ Partial Class FormMenu
         Me.lbl_nome.TabIndex = 3
         Me.lbl_nome.Text = "Label2"
         '
-        'dgv_forn
-        '
-        Me.dgv_forn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_forn.Location = New System.Drawing.Point(6, 19)
-        Me.dgv_forn.Name = "dgv_forn"
-        Me.dgv_forn.Size = New System.Drawing.Size(372, 229)
-        Me.dgv_forn.TabIndex = 0
-        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.dgv_prod)
-        Me.GroupBox2.Location = New System.Drawing.Point(417, 148)
+        Me.GroupBox2.Location = New System.Drawing.Point(521, 150)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(419, 254)
+        Me.GroupBox2.Size = New System.Drawing.Size(533, 409)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Produtos"
@@ -155,17 +167,78 @@ Partial Class FormMenu
         'dgv_prod
         '
         Me.dgv_prod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_prod.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cod_produto, Me.Nome_produto, Me.Valor, Me.Quantidade, Me.Fornecedor})
         Me.dgv_prod.Location = New System.Drawing.Point(6, 19)
         Me.dgv_prod.Name = "dgv_prod"
-        Me.dgv_prod.Size = New System.Drawing.Size(407, 229)
+        Me.dgv_prod.Size = New System.Drawing.Size(521, 384)
         Me.dgv_prod.TabIndex = 0
+        '
+        'Cod_Forn
+        '
+        Me.Cod_Forn.HeaderText = "Código Fornecedor"
+        Me.Cod_Forn.Name = "Cod_Forn"
+        '
+        'Nome_Forn
+        '
+        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
+        Me.Nome_Forn.Name = "Nome_Forn"
+        '
+        'Contato
+        '
+        Me.Contato.HeaderText = "Telefone"
+        Me.Contato.Name = "Contato"
+        '
+        'CNPJ
+        '
+        Me.CNPJ.HeaderText = "CNPJ"
+        Me.CNPJ.Name = "CNPJ"
+        '
+        'Responsavel
+        '
+        Me.Responsavel.HeaderText = "Responsável"
+        Me.Responsavel.Name = "Responsavel"
+        '
+        'Cod_produto
+        '
+        Me.Cod_produto.HeaderText = "Código do Produto"
+        Me.Cod_produto.Name = "Cod_produto"
+        '
+        'Nome_produto
+        '
+        Me.Nome_produto.HeaderText = "Produto"
+        Me.Nome_produto.Name = "Nome_produto"
+        '
+        'Valor
+        '
+        Me.Valor.HeaderText = "Valor"
+        Me.Valor.Name = "Valor"
+        '
+        'Quantidade
+        '
+        Me.Quantidade.HeaderText = "Quantidade em Estoque"
+        Me.Quantidade.Name = "Quantidade"
+        '
+        'Fornecedor
+        '
+        Me.Fornecedor.HeaderText = "Fornecedor"
+        Me.Fornecedor.Name = "Fornecedor"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(635, 49)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(296, 85)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Cadastrar Produto"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(860, 416)
+        Me.ClientSize = New System.Drawing.Size(1066, 571)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.Label1)
@@ -199,4 +272,15 @@ Partial Class FormMenu
     Friend WithEvents dgv_forn As DataGridView
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dgv_prod As DataGridView
+    Friend WithEvents Cod_Forn As DataGridViewTextBoxColumn
+    Friend WithEvents Nome_Forn As DataGridViewTextBoxColumn
+    Friend WithEvents Contato As DataGridViewTextBoxColumn
+    Friend WithEvents CNPJ As DataGridViewTextBoxColumn
+    Friend WithEvents Responsavel As DataGridViewTextBoxColumn
+    Friend WithEvents Cod_produto As DataGridViewTextBoxColumn
+    Friend WithEvents Nome_produto As DataGridViewTextBoxColumn
+    Friend WithEvents Valor As DataGridViewTextBoxColumn
+    Friend WithEvents Quantidade As DataGridViewTextBoxColumn
+    Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

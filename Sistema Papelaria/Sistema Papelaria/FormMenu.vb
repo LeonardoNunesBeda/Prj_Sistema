@@ -11,7 +11,7 @@
         If tipo_conta2 = "ADMINISTRADOR" Then
             ManutençãoDeContasToolStripMenuItem.Visible = True
         Else
-            ManutençãoDeContasToolStripMenuItem.Visible = True
+            ManutençãoDeContasToolStripMenuItem.Visible = False
         End If
 
     End Sub
