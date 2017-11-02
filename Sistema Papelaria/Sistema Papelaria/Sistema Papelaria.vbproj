@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55237620-713C-4B6D-A26E-AF024F2F6B13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistema_Papelaria.My.MyApplication</StartupObject>
+    <RootNamespace>Sistema_Papelaria</RootNamespace>
+    <AssemblyName>Sistema Papelaria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema Papelaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema Papelaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.SqlServer.Server" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.ApplicationServices" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="Microsoft.VisualBasic.Devices" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="Microsoft.VisualBasic.Logging" />
+    <Import Include="Microsoft.VisualBasic.MyServices" />
+    <Import Include="Microsoft.VisualBasic.MyServices.Internal" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="Microsoft.Win32.SafeHandles" />
+    <Import Include="Sistema_Papelaria" />
+    <Import Include="Sistema_Papelaria.My" />
+    <Import Include="Sistema_Papelaria.My.Resources" />
+    <Import Include="System" />
+    <Import Include="System.CodeDom" />
+    <Import Include="System.CodeDom.Compiler" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Concurrent" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.ObjectModel" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.ComponentModel.Design" />
+    <Import Include="System.ComponentModel.Design.Serialization" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Configuration.Assemblies" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Common" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Data.SqlTypes" />
+    <Import Include="System.Deployment.Application" />
+    <Import Include="System.Deployment.Internal" />
+    <Import Include="System.Deployment.Internal.CodeSigning" />
+    <Import Include="System.Diagnostics.CodeAnalysis" />
+    <Import Include="System.Diagnostics.Contracts" />
+    <Import Include="System.Diagnostics.Contracts.Internal" />
+    <Import Include="System.Diagnostics.Eventing" />
+    <Import Include="System.Diagnostics.Eventing.Reader" />
+    <Import Include="System.Diagnostics.PerformanceData" />
+    <Import Include="System.Diagnostics.SymbolStore" />
+    <Import Include="System.Diagnostics.Tracing" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing.Configuration" />
+    <Import Include="System.Drawing.Design" />
+    <Import Include="System.Drawing.Text" />
+    <Import Include="System.Dynamic" />
+    <Import Include="System.Globalization" />
+    <Import Include="System.IO" />
+    <Import Include="System.IO.Compression" />
+    <Import Include="System.IO.IsolatedStorage" />
+    <Import Include="System.IO.MemoryMappedFiles" />
+    <Import Include="System.IO.Pipes" />
+    <Import Include="System.IO.Ports" />
+    <Import Include="System.Linq.Expressions" />
+    <Import Include="System.Management.Instrumentation" />
+    <Import Include="System.Media" />
+    <Import Include="System.Net" />
+    <Import Include="System.Net.Cache" />
+    <Import Include="System.Net.Configuration" />
+    <Import Include="System.Net.Mail" />
+    <Import Include="System.Net.Mime" />
+    <Import Include="System.Net.NetworkInformation" />
+    <Import Include="System.Net.Security" />
+    <Import Include="System.Net.Sockets" />
+    <Import Include="System.Net.WebSockets" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Reflection.Emit" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Runtime" />
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.Runtime.ConstrainedExecution" />
+    <Import Include="System.Runtime.DesignerServices" />
+    <Import Include="System.Runtime.ExceptionServices" />
+    <Import Include="System.Runtime.Hosting" />
+    <Import Include="System.Runtime.InteropServices" />
+    <Import Include="System.Runtime.InteropServices.ComTypes" />
+    <Import Include="System.Runtime.InteropServices.Expando" />
+    <Import Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Import Include="System.Runtime.Remoting" />
+    <Import Include="System.Security" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Timers" />
+    <Import Include="System.Web" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms.ComponentModel.Com2Interop" />
+    <Import Include="System.Windows.Forms.Design" />
+    <Import Include="System.Windows.Forms.Layout" />
+    <Import Include="System.Windows.Forms.PropertyGridInternal" />
+    <Import Include="System.Windows.Forms.VisualStyles" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Markup" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Xml.Resolvers" />
+    <Import Include="System.Xml.Schema" />
+    <Import Include="System.Xml.Serialization" />
+    <Import Include="System.Xml.Serialization.Advanced" />
+    <Import Include="System.Xml.Serialization.Configuration" />
+    <Import Include="System.Xml.XmlConfiguration" />
+    <Import Include="System.Xml.XPath" />
+    <Import Include="System.Xml.Xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formcadastro_conta.Designer.vb">
+      <DependentUpon>Formcadastro_conta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formcadastro_conta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecuperarSenha.Designer.vb">
+      <DependentUpon>FormRecuperarSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecuperarSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatus.Designer.vb">
+      <DependentUpon>FormStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadastroFornecedor.Designer.vb">
+      <DependentUpon>Form_CadastroFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastroFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_CONEX.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formcadastro_conta.resx">
+      <DependentUpon>Formcadastro_conta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecuperarSenha.resx">
+      <DependentUpon>FormRecuperarSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatus.resx">
+      <DependentUpon>FormStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lockOpen2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB1">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOMD">
+      <Guid>{22813728-8BD3-11D0-B4EF-00A0C9138CA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
