@@ -14,7 +14,7 @@ Public Class Form_CadastroForn
         If rs.EOF = False Then
             Codigo = rs.Fields(0).Value + 1
         End If
-        Txt_codigo = Codigo
+        Txt_codigo.Text = Codigo
         Txt_codigo.Enabled = False
     End Sub
 End Class

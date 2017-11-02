@@ -1,6 +1,6 @@
 ﻿Public Class FormStatus
     Private Sub FormStatus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        With FormStatus.dgv_dados
+        With .dgv_dados
             .Rows.Clear()
             sql = "SELECT * FROM TB_lOGIN "
             rs = db.Execute(sql)

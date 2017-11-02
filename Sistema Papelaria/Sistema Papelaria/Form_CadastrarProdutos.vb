@@ -14,7 +14,7 @@ Public Class Form_CadastrarProdutos
         If rs.EOF = False Then
             Codigo = rs.Fields(0).Value + 1
         End If
-        Txt_codprod = Codigo
+        Txt_codprod.Text = Codigo
         Txt_codprod.Enabled = False
     End Sub
 End Class

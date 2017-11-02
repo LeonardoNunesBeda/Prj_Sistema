@@ -27,3 +27,9 @@ H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\
 H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
 H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
 H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources

@@ -7,6 +7,7 @@ Public Class Form_CadastrarCompras
 
     Public frm As New FormLogin()
     Public Vendedor As String = frm.usuario
+    Dim Codigo As Integer
 
     Private Sub Form_CadastrarCompras_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()

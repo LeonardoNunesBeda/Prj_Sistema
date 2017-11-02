@@ -78,9 +78,9 @@ Public Class FormLogin
             lbl_tentativas.Text = rs.Fields(8).Value
             Lbl_acesso.Text = rs.Fields(7).Value
             If Lbl_acesso.Text = "ADMINISTRADOR" Then
-                cmb_acesso.SelectedIndex(0)
+
             Else
-                cmb_acesso.SelectedIndex(2)
+
             End If
         End If
 
