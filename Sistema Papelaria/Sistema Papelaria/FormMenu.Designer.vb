@@ -28,20 +28,23 @@ Partial Class FormMenu
         Me.ListaDeStatusDeContaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastroDeFornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CadastrarCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VerComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarSessãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.dgv_forn = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbl_nome = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.dgv_prod = New System.Windows.Forms.DataGridView()
         Me.Cod_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Contato = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CNPJ = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Responsavel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_nome = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.dgv_prod = New System.Windows.Forms.DataGridView()
         Me.Cod_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,7 +60,7 @@ Partial Class FormMenu
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManutençãoDeContasToolStripMenuItem, Me.ClienteToolStripMenuItem, Me.EncerrarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManutençãoDeContasToolStripMenuItem, Me.ClienteToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EncerrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1066, 24)
@@ -96,6 +99,25 @@ Partial Class FormMenu
         Me.CadastroDeFornecedoresToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.CadastroDeFornecedoresToolStripMenuItem.Text = "Cadastro de Fornecedores"
         '
+        'ComprasToolStripMenuItem
+        '
+        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarCompraToolStripMenuItem, Me.VerComprasRealizadasToolStripMenuItem})
+        Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.ComprasToolStripMenuItem.Text = "Compras"
+        '
+        'CadastrarCompraToolStripMenuItem
+        '
+        Me.CadastrarCompraToolStripMenuItem.Name = "CadastrarCompraToolStripMenuItem"
+        Me.CadastrarCompraToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.CadastrarCompraToolStripMenuItem.Text = "Cadastrar compra"
+        '
+        'VerComprasRealizadasToolStripMenuItem
+        '
+        Me.VerComprasRealizadasToolStripMenuItem.Name = "VerComprasRealizadasToolStripMenuItem"
+        Me.VerComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.VerComprasRealizadasToolStripMenuItem.Text = "Ver compras realizadas"
+        '
         'EncerrarToolStripMenuItem
         '
         Me.EncerrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncerrarSessãoToolStripMenuItem, Me.EncerrarSistemaToolStripMenuItem})
@@ -133,6 +155,31 @@ Partial Class FormMenu
         Me.dgv_forn.Name = "dgv_forn"
         Me.dgv_forn.Size = New System.Drawing.Size(491, 384)
         Me.dgv_forn.TabIndex = 0
+        '
+        'Cod_Forn
+        '
+        Me.Cod_Forn.HeaderText = "Código Fornecedor"
+        Me.Cod_Forn.Name = "Cod_Forn"
+        '
+        'Nome_Forn
+        '
+        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
+        Me.Nome_Forn.Name = "Nome_Forn"
+        '
+        'Contato
+        '
+        Me.Contato.HeaderText = "Telefone"
+        Me.Contato.Name = "Contato"
+        '
+        'CNPJ
+        '
+        Me.CNPJ.HeaderText = "CNPJ"
+        Me.CNPJ.Name = "CNPJ"
+        '
+        'Responsavel
+        '
+        Me.Responsavel.HeaderText = "Responsável"
+        Me.Responsavel.Name = "Responsavel"
         '
         'Label1
         '
@@ -173,31 +220,6 @@ Partial Class FormMenu
         Me.dgv_prod.Size = New System.Drawing.Size(521, 384)
         Me.dgv_prod.TabIndex = 0
         '
-        'Cod_Forn
-        '
-        Me.Cod_Forn.HeaderText = "Código Fornecedor"
-        Me.Cod_Forn.Name = "Cod_Forn"
-        '
-        'Nome_Forn
-        '
-        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
-        Me.Nome_Forn.Name = "Nome_Forn"
-        '
-        'Contato
-        '
-        Me.Contato.HeaderText = "Telefone"
-        Me.Contato.Name = "Contato"
-        '
-        'CNPJ
-        '
-        Me.CNPJ.HeaderText = "CNPJ"
-        Me.CNPJ.Name = "CNPJ"
-        '
-        'Responsavel
-        '
-        Me.Responsavel.HeaderText = "Responsável"
-        Me.Responsavel.Name = "Responsavel"
-        '
         'Cod_produto
         '
         Me.Cod_produto.HeaderText = "Código do Produto"
@@ -225,7 +247,7 @@ Partial Class FormMenu
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(635, 49)
+        Me.Button1.Location = New System.Drawing.Point(651, 49)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(296, 85)
         Me.Button1.TabIndex = 5
@@ -283,4 +305,7 @@ Partial Class FormMenu
     Friend WithEvents Quantidade As DataGridViewTextBoxColumn
     Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
+    Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CadastrarCompraToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VerComprasRealizadasToolStripMenuItem As ToolStripMenuItem
 End Class

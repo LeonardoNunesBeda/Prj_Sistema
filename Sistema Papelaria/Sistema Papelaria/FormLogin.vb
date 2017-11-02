@@ -50,6 +50,7 @@ Public Class FormLogin
                     FormMenu.Show()
                 End If
             Else
+                MsgBox("Usuário ou senha incorretos" + vbNewLine + "Tente novamente.")
                 cont = cont - 1
                 lbl_tentativas.Text = cont
                 If cont < 1 Then
@@ -74,9 +75,13 @@ Public Class FormLogin
         rs = db.Execute(sql)
         If rs.EOF = False Then
             Dim nome As String = rs.Fields(3).ToString
-            MsgBox("ACHEI A QUERY" + nome)
             lbl_tentativas.Text = rs.Fields(8).Value
             Lbl_acesso.Text = rs.Fields(7).Value
+            If Lbl_acesso.Text = "ADMINISTRADOR" Then
+                cmb_acesso.SelectedIndex(0)
+            Else
+                cmb_acesso.SelectedIndex(2)
+            End If
         End If
 
     End Sub
@@ -95,5 +100,9 @@ Public Class FormLogin
         End If
 
 
+    End Sub
+
+    Private Sub lbl_senha_Click(sender As Object, e As EventArgs) Handles lbl_senha.Click
+        FormRecuperarSenha.Show()
     End Sub
 End Class
