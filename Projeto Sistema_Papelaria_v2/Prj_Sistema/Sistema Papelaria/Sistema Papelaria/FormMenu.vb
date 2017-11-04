@@ -23,17 +23,19 @@ Public Class FormMenu
         'Query para Carregar os dados nos DGV's
         sql = "SELECT * FROM TB_FORNECEDORES"
         rs = db.Execute(sql)
-        If rs.EOF = False Then
-
-        End If
+        Do While rs.EOF = False
+            dgv_forn.Rows.Add(rs.Fields(0).Value, rs.Fields(7).Value, rs.Fields(4).Value, rs.Fields(2).Value)
+            rs.MoveNext()
+        Loop
         sql = "SELECT * FROM TB_PRODUTOS"
         rs = db.Execute(sql)
-        If rs.EOF = False Then
-
-        End If
+        Do While rs.EOF = False
+            dgv_prod.Rows.Add(rs.Fields(0).Value, rs.Fields(7).Value, rs.Fields(4).Value, rs.Fields(2).Value)
+            rs.MoveNext()
+        Loop
     End Sub
     Private Sub CadastroDeContasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CadastroDeContasToolStripMenuItem.Click
-        FormCadastroConta.Show()
+        Form_CadastroUsuario.Show()
     End Sub
 
     Private Sub ListaDeStatusDeContaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListaDeStatusDeContaToolStripMenuItem.Click

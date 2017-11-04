@@ -23,6 +23,7 @@ Partial Class Form_CadastroForn
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_salvar = New System.Windows.Forms.Button()
         Me.lbl_id_fornecedor = New System.Windows.Forms.Label()
         Me.Txt_responsavel = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,14 +36,13 @@ Partial Class Form_CadastroForn
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btn_add_prod = New System.Windows.Forms.Button()
         Me.lst_produtos = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btn_salvar)
         Me.GroupBox1.Controls.Add(Me.lbl_id_fornecedor)
         Me.GroupBox1.Controls.Add(Me.Txt_responsavel)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -57,6 +57,17 @@ Partial Class Form_CadastroForn
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Novo Fornecedor"
+        '
+        'btn_salvar
+        '
+        Me.btn_salvar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_salvar.Location = New System.Drawing.Point(35, 192)
+        Me.btn_salvar.Name = "btn_salvar"
+        Me.btn_salvar.Size = New System.Drawing.Size(140, 25)
+        Me.btn_salvar.TabIndex = 3
+        Me.btn_salvar.Text = "Salvar Fornecedor"
+        Me.btn_salvar.UseVisualStyleBackColor = False
         '
         'lbl_id_fornecedor
         '
@@ -171,17 +182,6 @@ Partial Class Form_CadastroForn
         Me.lst_produtos.Size = New System.Drawing.Size(286, 147)
         Me.lst_produtos.TabIndex = 0
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(35, 192)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(140, 25)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Add Produto"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Form_CadastroForn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -212,5 +212,5 @@ Partial Class Form_CadastroForn
     Friend WithEvents lst_produtos As ListBox
     Friend WithEvents btn_add_prod As Button
     Friend WithEvents lbl_id_fornecedor As Windows.Forms.Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_salvar As Button
 End Class

@@ -23,7 +23,7 @@ Module MOD_CONEX
     Sub gerar_dados()
         With FormStatus.dgv_dados
             .Rows.Clear()
-            sql = "SELECT * FROM TB_lOGIN WHERE " & FormLogin.cb_selecione.Text & " LIKE %'" & FormLogin.txt_parametro.Text & "'%"
+            sql = "SELECT * FROM TB_lOGIN WHERE " & FormStatus.cb_selecione.Text & " LIKE %'" & FormStatus.txt_parametro.Text & "'%"
             rs = db.Execute(sql)
             Do While rs.EOF = False
                 .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)
