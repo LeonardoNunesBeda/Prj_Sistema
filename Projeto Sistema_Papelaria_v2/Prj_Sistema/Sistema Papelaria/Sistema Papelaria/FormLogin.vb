@@ -74,14 +74,9 @@ Public Class FormLogin
         sql = "SELECT * FROM TB_LOGIN WHERE usuario = '" & txt_user.Text & "'"
         rs = db.Execute(sql)
         If rs.EOF = False Then
-            Dim nome As String = rs.Fields(3).ToString
+            Dim nome As String = rs.Fields(3).Value
             lbl_tentativas.Text = rs.Fields(8).Value
             Lbl_acesso.Text = rs.Fields(7).Value
-            If Lbl_acesso.Text = "ADMINISTRADOR" Then
-
-            Else
-
-            End If
         End If
 
     End Sub
