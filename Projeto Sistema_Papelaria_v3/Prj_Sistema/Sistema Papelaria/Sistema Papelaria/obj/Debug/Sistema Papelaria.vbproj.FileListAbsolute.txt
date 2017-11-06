@@ -1,0 +1,136 @@
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe.config
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.pdb
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.xml
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
+D:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.cadastro_conta.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe.config
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbprojResolveAssemblyReference.cache
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormCadastroConta.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormMenu.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormRecuperarSenha.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.CoreCompileInputs.cache
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.pdb
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.xml
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+H:\FATEC\Sistemas de Informação\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbprojResolveAssemblyReference.cache
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADODB.dll
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormMenu.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormRecuperarSenha.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.CoreCompileInputs.cache
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+C:\Users\lucasdm\Source\Repos\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormMenu.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormRecuperarSenha.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe.config
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.pdb
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.xml
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\Leonardo\Desktop\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbprojResolveAssemblyReference.cache
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADODB.dll
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormMenu.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormRecuperarSenha.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.CoreCompileInputs.cache
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe.config
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.pdb
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.xml
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormListarFornecedores.resources
+C:\Users\lucasdm\source\repos\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormListarProdutos.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe.config
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.exe
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.pdb
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\Sistema Papelaria.xml
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\bin\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbprojResolveAssemblyReference.cache
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADODB.dll
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Interop.ADOMD.dll
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.ResolveComReference.cache
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormListarFornecedores.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormListarProdutos.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormLogin.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormMenu.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormRecuperarSenha.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.FormStatus.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarCompras.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastrarProdutos.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroForn.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CadastroUsuario.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Resources.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema_Papelaria.Form_CarregarCompras.pt-BR.resources
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.GenerateResource.Cache
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.vbproj.CoreCompileInputs.cache
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\pt-BR\Sistema Papelaria.resources.dll
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.exe
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.xml
+C:\Users\lucasdm\Documents\Projeto Sistema_Papelaria_v2\Prj_Sistema\Sistema Papelaria\Sistema Papelaria\obj\Debug\Sistema Papelaria.pdb
