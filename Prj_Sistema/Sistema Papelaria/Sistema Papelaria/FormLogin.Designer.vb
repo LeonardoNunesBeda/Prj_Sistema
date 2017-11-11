@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,10 @@ Partial Class FormLogin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.gb_login = New System.Windows.Forms.GroupBox()
-        Me.Lbl_acesso = New System.Windows.Forms.Label()
         Me.lbl_senha = New System.Windows.Forms.Label()
         Me.btn_entrar = New System.Windows.Forms.Button()
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
@@ -41,7 +40,6 @@ Partial Class FormLogin
         '
         'gb_login
         '
-        Me.gb_login.Controls.Add(Me.Lbl_acesso)
         Me.gb_login.Controls.Add(Me.lbl_senha)
         Me.gb_login.Controls.Add(Me.btn_entrar)
         Me.gb_login.Controls.Add(Me.groupBox1)
@@ -58,15 +56,6 @@ Partial Class FormLogin
         Me.gb_login.TabIndex = 5
         Me.gb_login.TabStop = False
         Me.gb_login.Text = "Autenticação"
-        '
-        'Lbl_acesso
-        '
-        Me.Lbl_acesso.AutoSize = True
-        Me.Lbl_acesso.Location = New System.Drawing.Point(126, 147)
-        Me.Lbl_acesso.Name = "Lbl_acesso"
-        Me.Lbl_acesso.Size = New System.Drawing.Size(33, 13)
-        Me.Lbl_acesso.TabIndex = 9
-        Me.Lbl_acesso.Text = "None"
         '
         'lbl_senha
         '
@@ -112,15 +101,16 @@ Partial Class FormLogin
         Me.lbl_tentativas.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_tentativas.Location = New System.Drawing.Point(16, 16)
         Me.lbl_tentativas.Name = "lbl_tentativas"
-        Me.lbl_tentativas.Size = New System.Drawing.Size(51, 55)
+        Me.lbl_tentativas.Size = New System.Drawing.Size(40, 55)
         Me.lbl_tentativas.TabIndex = 0
-        Me.lbl_tentativas.Text = "3"
+        Me.lbl_tentativas.Text = "-"
         '
         'cmb_acesso
         '
         Me.cmb_acesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.cmb_acesso.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmb_acesso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_acesso.Enabled = False
         Me.cmb_acesso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmb_acesso.FormattingEnabled = True
         Me.cmb_acesso.Items.AddRange(New Object() {"Funcionário", "Administrador"})
@@ -184,6 +174,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.gb_login)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.gb_login.ResumeLayout(False)
         Me.gb_login.PerformLayout()
@@ -203,5 +194,4 @@ Partial Class FormLogin
     Private WithEvents txt_senha As System.Windows.Forms.TextBox
     Private WithEvents txt_user As System.Windows.Forms.TextBox
     Private WithEvents label2 As System.Windows.Forms.Label
-    Friend WithEvents Lbl_acesso As Windows.Forms.Label
 End Class

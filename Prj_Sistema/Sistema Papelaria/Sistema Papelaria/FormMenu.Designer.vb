@@ -22,76 +22,72 @@ Partial Class FormMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ManutençãoDeContasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastroDeContasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListaDeStatusDeContaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FornToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastroDeFornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListarFornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastrarCompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerComprasRealizadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CadastrarProdutosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarSessãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EncerrarSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.dgv_forn = New System.Windows.Forms.DataGridView()
-        Me.Cod_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nome_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Contato = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CNPJ = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Responsavel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbl_user_name = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Btn_Encerrar = New System.Windows.Forms.Button()
+        Me.Btn_Sair = New System.Windows.Forms.Button()
+        Me.Btn_Contas = New System.Windows.Forms.Button()
+        Me.Btn_Cadastrar = New System.Windows.Forms.Button()
+        Me.Btn_Comprar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbl_nome = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.dgv_prod = New System.Windows.Forms.DataGridView()
-        Me.Cod_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nome_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fornecedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.RelatórioDeComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.dgv_forn, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.dgv_prod, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManutençãoDeContasToolStripMenuItem, Me.ClienteToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EncerrarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManutençãoDeContasToolStripMenuItem, Me.FornToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ToolStripMenuItem13, Me.EncerrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1066, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(523, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ManutençãoDeContasToolStripMenuItem
         '
         Me.ManutençãoDeContasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroDeContasToolStripMenuItem, Me.ListaDeStatusDeContaToolStripMenuItem})
+        Me.ManutençãoDeContasToolStripMenuItem.Image = Global.Sistema_Papelaria.My.Resources.Resources.accounts
         Me.ManutençãoDeContasToolStripMenuItem.Name = "ManutençãoDeContasToolStripMenuItem"
-        Me.ManutençãoDeContasToolStripMenuItem.Size = New System.Drawing.Size(140, 20)
+        Me.ManutençãoDeContasToolStripMenuItem.Size = New System.Drawing.Size(156, 20)
         Me.ManutençãoDeContasToolStripMenuItem.Text = "Manutenção de contas"
         '
         'CadastroDeContasToolStripMenuItem
         '
         Me.CadastroDeContasToolStripMenuItem.Name = "CadastroDeContasToolStripMenuItem"
-        Me.CadastroDeContasToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.CadastroDeContasToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
         Me.CadastroDeContasToolStripMenuItem.Text = "Cadastro de Contas"
         '
         'ListaDeStatusDeContaToolStripMenuItem
         '
         Me.ListaDeStatusDeContaToolStripMenuItem.Name = "ListaDeStatusDeContaToolStripMenuItem"
-        Me.ListaDeStatusDeContaToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.ListaDeStatusDeContaToolStripMenuItem.Text = "Lista de status de conta"
+        Me.ListaDeStatusDeContaToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.ListaDeStatusDeContaToolStripMenuItem.Text = "Lista/Status das contas"
         '
-        'ClienteToolStripMenuItem
+        'FornToolStripMenuItem
         '
-        Me.ClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroDeFornecedoresToolStripMenuItem})
-        Me.ClienteToolStripMenuItem.Name = "ClienteToolStripMenuItem"
-        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
-        Me.ClienteToolStripMenuItem.Text = "Fornecedores"
+        Me.FornToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroDeFornecedoresToolStripMenuItem, Me.ListarFornecedoresToolStripMenuItem})
+        Me.FornToolStripMenuItem.Image = Global.Sistema_Papelaria.My.Resources.Resources.ship1
+        Me.FornToolStripMenuItem.Name = "FornToolStripMenuItem"
+        Me.FornToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.FornToolStripMenuItem.Text = "Fornecedores"
         '
         'CadastroDeFornecedoresToolStripMenuItem
         '
@@ -99,30 +95,58 @@ Partial Class FormMenu
         Me.CadastroDeFornecedoresToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.CadastroDeFornecedoresToolStripMenuItem.Text = "Cadastro de Fornecedores"
         '
+        'ListarFornecedoresToolStripMenuItem
+        '
+        Me.ListarFornecedoresToolStripMenuItem.Name = "ListarFornecedoresToolStripMenuItem"
+        Me.ListarFornecedoresToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.ListarFornecedoresToolStripMenuItem.Text = "Listar Fornecedores"
+        '
         'ComprasToolStripMenuItem
         '
-        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarCompraToolStripMenuItem, Me.VerComprasRealizadasToolStripMenuItem})
+        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarCompraToolStripMenuItem, Me.VerComprasRealizadasToolStripMenuItem, Me.RelatórioDeComprasToolStripMenuItem})
+        Me.ComprasToolStripMenuItem.Image = Global.Sistema_Papelaria.My.Resources.Resources.money
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
-        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
         Me.ComprasToolStripMenuItem.Text = "Compras"
         '
         'CadastrarCompraToolStripMenuItem
         '
         Me.CadastrarCompraToolStripMenuItem.Name = "CadastrarCompraToolStripMenuItem"
-        Me.CadastrarCompraToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.CadastrarCompraToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
         Me.CadastrarCompraToolStripMenuItem.Text = "Cadastrar compra"
         '
         'VerComprasRealizadasToolStripMenuItem
         '
         Me.VerComprasRealizadasToolStripMenuItem.Name = "VerComprasRealizadasToolStripMenuItem"
-        Me.VerComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.VerComprasRealizadasToolStripMenuItem.Text = "Ver compras realizadas"
+        Me.VerComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.VerComprasRealizadasToolStripMenuItem.Text = "Gerar relatório"
+        '
+        'ToolStripMenuItem13
+        '
+        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarProdutosToolStripMenuItem, Me.ToolStripMenuItem15})
+        Me.ToolStripMenuItem13.Image = Global.Sistema_Papelaria.My.Resources.Resources.shop_basq
+        Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(77, 20)
+        Me.ToolStripMenuItem13.Text = "Estoque"
+        '
+        'CadastrarProdutosToolStripMenuItem
+        '
+        Me.CadastrarProdutosToolStripMenuItem.Name = "CadastrarProdutosToolStripMenuItem"
+        Me.CadastrarProdutosToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.CadastrarProdutosToolStripMenuItem.Text = "Cadastrar Produto"
+        '
+        'ToolStripMenuItem15
+        '
+        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(170, 22)
+        Me.ToolStripMenuItem15.Text = "Listar Produtos"
         '
         'EncerrarToolStripMenuItem
         '
         Me.EncerrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncerrarSessãoToolStripMenuItem, Me.EncerrarSistemaToolStripMenuItem})
+        Me.EncerrarToolStripMenuItem.Image = Global.Sistema_Papelaria.My.Resources.Resources.power2
         Me.EncerrarToolStripMenuItem.Name = "EncerrarToolStripMenuItem"
-        Me.EncerrarToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.EncerrarToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
         Me.EncerrarToolStripMenuItem.Text = "Encerrar"
         '
         'EncerrarSessãoToolStripMenuItem
@@ -137,144 +161,138 @@ Partial Class FormMenu
         Me.EncerrarSistemaToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.EncerrarSistemaToolStripMenuItem.Text = "Encerrar Sistema"
         '
-        'GroupBox1
+        'lbl_user_name
         '
-        Me.GroupBox1.Controls.Add(Me.dgv_forn)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 148)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(503, 409)
-        Me.GroupBox1.TabIndex = 1
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Fornecedores"
+        Me.lbl_user_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_user_name.Location = New System.Drawing.Point(12, 51)
+        Me.lbl_user_name.Name = "lbl_user_name"
+        Me.lbl_user_name.Size = New System.Drawing.Size(499, 25)
+        Me.lbl_user_name.TabIndex = 2
+        Me.lbl_user_name.Text = "Olá, Usuário."
+        Me.lbl_user_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'dgv_forn
+        'PictureBox1
         '
-        Me.dgv_forn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_forn.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cod_Forn, Me.Nome_Forn, Me.Contato, Me.CNPJ, Me.Responsavel})
-        Me.dgv_forn.Location = New System.Drawing.Point(6, 19)
-        Me.dgv_forn.Name = "dgv_forn"
-        Me.dgv_forn.Size = New System.Drawing.Size(491, 384)
-        Me.dgv_forn.TabIndex = 0
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox1.Image = Global.Sistema_Papelaria.My.Resources.Resources.papelaria
+        Me.PictureBox1.Location = New System.Drawing.Point(207, 173)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(304, 180)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
-        'Cod_Forn
+        'Btn_Encerrar
         '
-        Me.Cod_Forn.HeaderText = "Código Fornecedor"
-        Me.Cod_Forn.Name = "Cod_Forn"
+        Me.Btn_Encerrar.FlatAppearance.BorderSize = 5
+        Me.Btn_Encerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Encerrar.Image = Global.Sistema_Papelaria.My.Resources.Resources.power2
+        Me.Btn_Encerrar.Location = New System.Drawing.Point(12, 311)
+        Me.Btn_Encerrar.Name = "Btn_Encerrar"
+        Me.Btn_Encerrar.Size = New System.Drawing.Size(143, 42)
+        Me.Btn_Encerrar.TabIndex = 9
+        Me.Btn_Encerrar.Text = "Encerrar Programa"
+        Me.Btn_Encerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_Encerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Encerrar.UseVisualStyleBackColor = True
         '
-        'Nome_Forn
+        'Btn_Sair
         '
-        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
-        Me.Nome_Forn.Name = "Nome_Forn"
+        Me.Btn_Sair.FlatAppearance.BorderSize = 5
+        Me.Btn_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Sair.Image = Global.Sistema_Papelaria.My.Resources.Resources.lock
+        Me.Btn_Sair.Location = New System.Drawing.Point(12, 263)
+        Me.Btn_Sair.Name = "Btn_Sair"
+        Me.Btn_Sair.Size = New System.Drawing.Size(143, 42)
+        Me.Btn_Sair.TabIndex = 8
+        Me.Btn_Sair.Text = "Encerrar Sessão"
+        Me.Btn_Sair.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_Sair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Sair.UseVisualStyleBackColor = True
         '
-        'Contato
+        'Btn_Contas
         '
-        Me.Contato.HeaderText = "Telefone"
-        Me.Contato.Name = "Contato"
+        Me.Btn_Contas.FlatAppearance.BorderSize = 5
+        Me.Btn_Contas.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Contas.Image = Global.Sistema_Papelaria.My.Resources.Resources.accounts
+        Me.Btn_Contas.Location = New System.Drawing.Point(350, 105)
+        Me.Btn_Contas.Name = "Btn_Contas"
+        Me.Btn_Contas.Size = New System.Drawing.Size(161, 53)
+        Me.Btn_Contas.TabIndex = 7
+        Me.Btn_Contas.Text = "Contas"
+        Me.Btn_Contas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_Contas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Contas.UseVisualStyleBackColor = True
         '
-        'CNPJ
+        'Btn_Cadastrar
         '
-        Me.CNPJ.HeaderText = "CNPJ"
-        Me.CNPJ.Name = "CNPJ"
+        Me.Btn_Cadastrar.FlatAppearance.BorderSize = 5
+        Me.Btn_Cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Cadastrar.Image = Global.Sistema_Papelaria.My.Resources.Resources.add_box
+        Me.Btn_Cadastrar.Location = New System.Drawing.Point(188, 105)
+        Me.Btn_Cadastrar.Name = "Btn_Cadastrar"
+        Me.Btn_Cadastrar.Size = New System.Drawing.Size(156, 53)
+        Me.Btn_Cadastrar.TabIndex = 6
+        Me.Btn_Cadastrar.Text = "Cadastrar Produto"
+        Me.Btn_Cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_Cadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Cadastrar.UseVisualStyleBackColor = True
         '
-        'Responsavel
+        'Btn_Comprar
         '
-        Me.Responsavel.HeaderText = "Responsável"
-        Me.Responsavel.Name = "Responsavel"
+        Me.Btn_Comprar.FlatAppearance.BorderSize = 5
+        Me.Btn_Comprar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Comprar.Image = Global.Sistema_Papelaria.My.Resources.Resources.money
+        Me.Btn_Comprar.Location = New System.Drawing.Point(12, 105)
+        Me.Btn_Comprar.Name = "Btn_Comprar"
+        Me.Btn_Comprar.Size = New System.Drawing.Size(170, 53)
+        Me.Btn_Comprar.TabIndex = 5
+        Me.Btn_Comprar.Text = "Comprar"
+        Me.Btn_Comprar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Btn_Comprar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Comprar.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 49)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Blue
+        Me.Label1.Location = New System.Drawing.Point(388, 356)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 39)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Olá,"
+        Me.Label1.Size = New System.Drawing.Size(123, 20)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Papelaria v1.0 ©"
         '
-        'lbl_nome
+        'RelatórioDeComprasToolStripMenuItem
         '
-        Me.lbl_nome.AutoSize = True
-        Me.lbl_nome.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_nome.Location = New System.Drawing.Point(123, 62)
-        Me.lbl_nome.Name = "lbl_nome"
-        Me.lbl_nome.Size = New System.Drawing.Size(66, 24)
-        Me.lbl_nome.TabIndex = 3
-        Me.lbl_nome.Text = "Label2"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.dgv_prod)
-        Me.GroupBox2.Location = New System.Drawing.Point(521, 150)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(533, 409)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Produtos"
-        '
-        'dgv_prod
-        '
-        Me.dgv_prod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_prod.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cod_produto, Me.Nome_produto, Me.Valor, Me.Quantidade, Me.Fornecedor})
-        Me.dgv_prod.Location = New System.Drawing.Point(6, 19)
-        Me.dgv_prod.Name = "dgv_prod"
-        Me.dgv_prod.Size = New System.Drawing.Size(521, 384)
-        Me.dgv_prod.TabIndex = 0
-        '
-        'Cod_produto
-        '
-        Me.Cod_produto.HeaderText = "Código do Produto"
-        Me.Cod_produto.Name = "Cod_produto"
-        '
-        'Nome_produto
-        '
-        Me.Nome_produto.HeaderText = "Produto"
-        Me.Nome_produto.Name = "Nome_produto"
-        '
-        'Valor
-        '
-        Me.Valor.HeaderText = "Valor"
-        Me.Valor.Name = "Valor"
-        '
-        'Quantidade
-        '
-        Me.Quantidade.HeaderText = "Quantidade em Estoque"
-        Me.Quantidade.Name = "Quantidade"
-        '
-        'Fornecedor
-        '
-        Me.Fornecedor.HeaderText = "Fornecedor"
-        Me.Fornecedor.Name = "Fornecedor"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(651, 49)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(296, 85)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Cadastrar Produto"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.RelatórioDeComprasToolStripMenuItem.Name = "RelatórioDeComprasToolStripMenuItem"
+        Me.RelatórioDeComprasToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.RelatórioDeComprasToolStripMenuItem.Text = "Relatório de Compras"
         '
         'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1066, 571)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.lbl_nome)
+        Me.ClientSize = New System.Drawing.Size(523, 387)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Btn_Encerrar)
+        Me.Controls.Add(Me.Btn_Sair)
+        Me.Controls.Add(Me.Btn_Contas)
+        Me.Controls.Add(Me.Btn_Cadastrar)
+        Me.Controls.Add(Me.Btn_Comprar)
+        Me.Controls.Add(Me.lbl_user_name)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormMenu"
-        Me.Text = "Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Papelaria v1.0"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.dgv_forn, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.dgv_prod, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -283,29 +301,25 @@ Partial Class FormMenu
     Friend WithEvents ManutençãoDeContasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CadastroDeContasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListaDeStatusDeContaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FornToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CadastroDeFornecedoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EncerrarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EncerrarSessãoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EncerrarSistemaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents lbl_nome As Windows.Forms.Label
-    Friend WithEvents dgv_forn As DataGridView
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents dgv_prod As DataGridView
-    Friend WithEvents Cod_Forn As DataGridViewTextBoxColumn
-    Friend WithEvents Nome_Forn As DataGridViewTextBoxColumn
-    Friend WithEvents Contato As DataGridViewTextBoxColumn
-    Friend WithEvents CNPJ As DataGridViewTextBoxColumn
-    Friend WithEvents Responsavel As DataGridViewTextBoxColumn
-    Friend WithEvents Cod_produto As DataGridViewTextBoxColumn
-    Friend WithEvents Nome_produto As DataGridViewTextBoxColumn
-    Friend WithEvents Valor As DataGridViewTextBoxColumn
-    Friend WithEvents Quantidade As DataGridViewTextBoxColumn
-    Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
+    Friend WithEvents lbl_user_name As Windows.Forms.Label
+    Friend WithEvents Btn_Comprar As Button
     Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CadastrarCompraToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VerComprasRealizadasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListarFornecedoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Btn_Cadastrar As Button
+    Friend WithEvents Btn_Contas As Button
+    Friend WithEvents Btn_Sair As Button
+    Friend WithEvents Btn_Encerrar As Button
+    Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
+    Friend WithEvents CadastrarProdutosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Windows.Forms.Label
+    Friend WithEvents RelatórioDeComprasToolStripMenuItem As ToolStripMenuItem
 End Class

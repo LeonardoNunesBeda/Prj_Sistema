@@ -1,6 +1,11 @@
-﻿Public Class FormStatus
+﻿Imports System
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Data.OleDb.OleDbConnection
+Imports System.Data.OleDb
+Public Class FormStatus
     Private Sub FormStatus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        With .dgv_dados
+        With dgv_dados
             .Rows.Clear()
             sql = "SELECT * FROM TB_lOGIN "
             rs = db.Execute(sql)

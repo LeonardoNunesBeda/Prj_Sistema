@@ -24,11 +24,6 @@ Partial Class Form_CarregarCompras
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_CarregarCompras))
         Me.Dgv_Compras = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Qtd = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CPF = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Data = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Txt_cliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,6 +31,10 @@ Partial Class Form_CarregarCompras
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmb_produto = New System.Windows.Forms.ComboBox()
         Me.btn_entrar = New System.Windows.Forms.Button()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Qtd = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CPF = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Dgv_Compras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,38 +42,8 @@ Partial Class Form_CarregarCompras
         '
         resources.ApplyResources(Me.Dgv_Compras, "Dgv_Compras")
         Me.Dgv_Compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Produto, Me.Qtd, Me.CPF, Me.Data})
+        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Produto, Me.Qtd, Me.CPF})
         Me.Dgv_Compras.Name = "Dgv_Compras"
-        '
-        'ID
-        '
-        resources.ApplyResources(Me.ID, "ID")
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'Produto
-        '
-        resources.ApplyResources(Me.Produto, "Produto")
-        Me.Produto.Name = "Produto"
-        Me.Produto.ReadOnly = True
-        '
-        'Qtd
-        '
-        resources.ApplyResources(Me.Qtd, "Qtd")
-        Me.Qtd.Name = "Qtd"
-        Me.Qtd.ReadOnly = True
-        '
-        'CPF
-        '
-        resources.ApplyResources(Me.CPF, "CPF")
-        Me.CPF.Name = "CPF"
-        Me.CPF.ReadOnly = True
-        '
-        'Data
-        '
-        resources.ApplyResources(Me.Data, "Data")
-        Me.Data.Name = "Data"
-        Me.Data.ReadOnly = True
         '
         'Txt_cliente
         '
@@ -120,6 +89,30 @@ Partial Class Form_CarregarCompras
         Me.btn_entrar.Name = "btn_entrar"
         Me.btn_entrar.UseVisualStyleBackColor = True
         '
+        'ID
+        '
+        resources.ApplyResources(Me.ID, "ID")
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        '
+        'Produto
+        '
+        resources.ApplyResources(Me.Produto, "Produto")
+        Me.Produto.Name = "Produto"
+        Me.Produto.ReadOnly = True
+        '
+        'Qtd
+        '
+        resources.ApplyResources(Me.Qtd, "Qtd")
+        Me.Qtd.Name = "Qtd"
+        Me.Qtd.ReadOnly = True
+        '
+        'CPF
+        '
+        resources.ApplyResources(Me.CPF, "CPF")
+        Me.CPF.Name = "CPF"
+        Me.CPF.ReadOnly = True
+        '
         'Form_CarregarCompras
         '
         resources.ApplyResources(Me, "$this")
@@ -146,11 +139,10 @@ Partial Class Form_CarregarCompras
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents Txt_CodigoCompra As TextBox
     Friend WithEvents Label3 As Windows.Forms.Label
+    Private WithEvents cmb_produto As ComboBox
+    Private WithEvents btn_entrar As Button
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Produto As DataGridViewTextBoxColumn
     Friend WithEvents Qtd As DataGridViewTextBoxColumn
     Friend WithEvents CPF As DataGridViewTextBoxColumn
-    Friend WithEvents Data As DataGridViewTextBoxColumn
-    Private WithEvents cmb_produto As ComboBox
-    Private WithEvents btn_entrar As Button
 End Class

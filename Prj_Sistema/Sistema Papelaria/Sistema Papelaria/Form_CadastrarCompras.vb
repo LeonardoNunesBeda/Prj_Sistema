@@ -17,7 +17,5 @@ Public Class Form_CadastrarCompras
             Codigo = rs.Fields(0).Value + 1
         End If
         lbl_codigo.Text = Codigo
-        Txt_vendendor.Text = Vendedor
-        Txt_vendendor.Enabled = False
     End Sub
 End Class

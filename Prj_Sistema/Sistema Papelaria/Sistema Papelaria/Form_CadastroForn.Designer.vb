@@ -23,6 +23,8 @@ Partial Class Form_CadastroForn
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_salvar = New System.Windows.Forms.Button()
+        Me.lbl_id_fornecedor = New System.Windows.Forms.Label()
         Me.Txt_responsavel = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txt_cnpj = New System.Windows.Forms.TextBox()
@@ -32,15 +34,15 @@ Partial Class Form_CadastroForn
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_del_prod = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lst_produtos = New System.Windows.Forms.ListBox()
         Me.btn_add_prod = New System.Windows.Forms.Button()
-        Me.lbl_id_fornecedor = New System.Windows.Forms.Label()
+        Me.lst_produtos = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btn_salvar)
         Me.GroupBox1.Controls.Add(Me.lbl_id_fornecedor)
         Me.GroupBox1.Controls.Add(Me.Txt_responsavel)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -55,6 +57,27 @@ Partial Class Form_CadastroForn
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Novo Fornecedor"
+        '
+        'btn_salvar
+        '
+        Me.btn_salvar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_salvar.Location = New System.Drawing.Point(35, 192)
+        Me.btn_salvar.Name = "btn_salvar"
+        Me.btn_salvar.Size = New System.Drawing.Size(140, 25)
+        Me.btn_salvar.TabIndex = 3
+        Me.btn_salvar.Text = "Salvar Fornecedor"
+        Me.btn_salvar.UseVisualStyleBackColor = False
+        '
+        'lbl_id_fornecedor
+        '
+        Me.lbl_id_fornecedor.AutoSize = True
+        Me.lbl_id_fornecedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_id_fornecedor.Location = New System.Drawing.Point(127, 20)
+        Me.lbl_id_fornecedor.Name = "lbl_id_fornecedor"
+        Me.lbl_id_fornecedor.Size = New System.Drawing.Size(48, 25)
+        Me.lbl_id_fornecedor.TabIndex = 8
+        Me.lbl_id_fornecedor.Text = "001"
         '
         'Txt_responsavel
         '
@@ -140,14 +163,6 @@ Partial Class Form_CadastroForn
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Produtos fornecidos:"
         '
-        'lst_produtos
-        '
-        Me.lst_produtos.FormattingEnabled = True
-        Me.lst_produtos.Location = New System.Drawing.Point(6, 20)
-        Me.lst_produtos.Name = "lst_produtos"
-        Me.lst_produtos.Size = New System.Drawing.Size(286, 147)
-        Me.lst_produtos.TabIndex = 0
-        '
         'btn_add_prod
         '
         Me.btn_add_prod.BackColor = System.Drawing.Color.Transparent
@@ -159,15 +174,13 @@ Partial Class Form_CadastroForn
         Me.btn_add_prod.Text = "Add Produto"
         Me.btn_add_prod.UseVisualStyleBackColor = False
         '
-        'lbl_id_fornecedor
+        'lst_produtos
         '
-        Me.lbl_id_fornecedor.AutoSize = True
-        Me.lbl_id_fornecedor.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_id_fornecedor.Location = New System.Drawing.Point(127, 20)
-        Me.lbl_id_fornecedor.Name = "lbl_id_fornecedor"
-        Me.lbl_id_fornecedor.Size = New System.Drawing.Size(48, 25)
-        Me.lbl_id_fornecedor.TabIndex = 8
-        Me.lbl_id_fornecedor.Text = "001"
+        Me.lst_produtos.FormattingEnabled = True
+        Me.lst_produtos.Location = New System.Drawing.Point(6, 20)
+        Me.lst_produtos.Name = "lst_produtos"
+        Me.lst_produtos.Size = New System.Drawing.Size(286, 147)
+        Me.lst_produtos.TabIndex = 0
         '
         'Form_CadastroForn
         '
@@ -199,4 +212,5 @@ Partial Class Form_CadastroForn
     Friend WithEvents lst_produtos As ListBox
     Friend WithEvents btn_add_prod As Button
     Friend WithEvents lbl_id_fornecedor As Windows.Forms.Label
+    Friend WithEvents btn_salvar As Button
 End Class

@@ -24,13 +24,13 @@ Partial Class FormRecuperarSenha
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRecuperarSenha))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_recuperar = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_resp = New System.Windows.Forms.TextBox()
         Me.cmb_pergunta = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.txt_user = New System.Windows.Forms.TextBox()
-        Me.btn_recuperar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,6 +49,19 @@ Partial Class FormRecuperarSenha
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cadastro de conta"
+        '
+        'btn_recuperar
+        '
+        Me.btn_recuperar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_recuperar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_recuperar.Image = Global.Sistema_Papelaria.My.Resources.Resources.lockOpen2
+        Me.btn_recuperar.Location = New System.Drawing.Point(9, 186)
+        Me.btn_recuperar.Name = "btn_recuperar"
+        Me.btn_recuperar.Size = New System.Drawing.Size(202, 43)
+        Me.btn_recuperar.TabIndex = 17
+        Me.btn_recuperar.Text = "Recuperar Senha"
+        Me.btn_recuperar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_recuperar.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -108,19 +121,6 @@ Partial Class FormRecuperarSenha
         Me.txt_user.Size = New System.Drawing.Size(202, 20)
         Me.txt_user.TabIndex = 3
         '
-        'btn_recuperar
-        '
-        Me.btn_recuperar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_recuperar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_recuperar.Image = Global.Sistema_Papelaria.My.Resources.Resources.lockOpen2
-        Me.btn_recuperar.Location = New System.Drawing.Point(9, 186)
-        Me.btn_recuperar.Name = "btn_recuperar"
-        Me.btn_recuperar.Size = New System.Drawing.Size(202, 43)
-        Me.btn_recuperar.TabIndex = 17
-        Me.btn_recuperar.Text = "Recuperar Senha"
-        Me.btn_recuperar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_recuperar.UseVisualStyleBackColor = True
-        '
         'FormRecuperarSenha
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -128,8 +128,10 @@ Partial Class FormRecuperarSenha
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(250, 265)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormRecuperarSenha"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recuperar Senha"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -8,38 +8,83 @@ Sistema Papelaria
 <members>
 <member name="T:Sistema_Papelaria.My.Resources.Resources">
 <summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+  Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.ResourceManager">
 <summary>
-  Returns the cached ResourceManager instance used by this class.
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.Culture">
 <summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.account">
 <summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.account2">
 <summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.accounts">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.add_box">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.add_in_size_box">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.key1">
 <summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.lock">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.lockOpen2">
 <summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.money">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.papelaria">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.power2">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.ship1">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.shop_basq">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
 </members>

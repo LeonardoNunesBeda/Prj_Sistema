@@ -5,8 +5,8 @@ Imports System.Data.OleDb.OleDbConnection
 Imports System.Data.OleDb
 Module MOD_CONEX
 
-    Public db As New ADODB.connection
-    Public rs As New adodb.recordset
+    Public db As New ADODB.Connection
+    Public rs As New ADODB.Recordset
     Public sql, diretorio As String
     Public conexao = Application.StartupPath & "\papelariaDB.mdb"
     Public cont As Long
@@ -23,7 +23,7 @@ Module MOD_CONEX
     Sub gerar_dados()
         With FormStatus.dgv_dados
             .Rows.Clear()
-            sql = "SELECT * FROM TB_lOGIN WHERE " & FormLogin.cb_selecione.Text & " LIKE %'" & FormLogin.txt_parametro.Text & "'%"
+            sql = "SELECT * FROM TB_lOGIN WHERE " & FormStatus.cb_selecione.Text & " LIKE %'" & FormStatus.txt_parametro.Text & "'%"
             rs = db.Execute(sql)
             Do While rs.EOF = False
                 .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)

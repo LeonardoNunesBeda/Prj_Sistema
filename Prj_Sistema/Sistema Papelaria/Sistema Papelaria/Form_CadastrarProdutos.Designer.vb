@@ -25,9 +25,9 @@ Partial Class Form_CadastrarProdutos
         Me.lbl = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cb_fornecedor = New System.Windows.Forms.ComboBox()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.NUD_qtdProd = New System.Windows.Forms.NumericUpDown()
         Me.btn_add_fornecedor = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_codProd = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txt_valor = New System.Windows.Forms.TextBox()
@@ -36,7 +36,7 @@ Partial Class Form_CadastrarProdutos
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Btn_salvar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NUD_qtdProd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl
@@ -51,9 +51,9 @@ Partial Class Form_CadastrarProdutos
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.cb_fornecedor)
-        Me.GroupBox1.Controls.Add(Me.NumericUpDown1)
+        Me.GroupBox1.Controls.Add(Me.NUD_qtdProd)
         Me.GroupBox1.Controls.Add(Me.btn_add_fornecedor)
-        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.lbl_codProd)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Txt_valor)
@@ -81,13 +81,13 @@ Partial Class Form_CadastrarProdutos
         Me.cb_fornecedor.Size = New System.Drawing.Size(220, 21)
         Me.cb_fornecedor.TabIndex = 12
         '
-        'NumericUpDown1
+        'NUD_qtdProd
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumericUpDown1.Location = New System.Drawing.Point(107, 126)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown1.TabIndex = 11
+        Me.NUD_qtdProd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NUD_qtdProd.Location = New System.Drawing.Point(107, 126)
+        Me.NUD_qtdProd.Name = "NUD_qtdProd"
+        Me.NUD_qtdProd.Size = New System.Drawing.Size(120, 20)
+        Me.NUD_qtdProd.TabIndex = 11
         '
         'btn_add_fornecedor
         '
@@ -99,17 +99,17 @@ Partial Class Form_CadastrarProdutos
         Me.btn_add_fornecedor.Text = "Add Novo Fornecedor"
         Me.btn_add_fornecedor.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lbl_codProd
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(98, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 25)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "001"
+        Me.lbl_codProd.AutoSize = True
+        Me.lbl_codProd.BackColor = System.Drawing.Color.White
+        Me.lbl_codProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lbl_codProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_codProd.Location = New System.Drawing.Point(98, 24)
+        Me.lbl_codProd.Name = "lbl_codProd"
+        Me.lbl_codProd.Size = New System.Drawing.Size(48, 25)
+        Me.lbl_codProd.TabIndex = 10
+        Me.lbl_codProd.Text = "001"
         '
         'Label5
         '
@@ -125,9 +125,9 @@ Partial Class Form_CadastrarProdutos
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(104, 110)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(121, 13)
+        Me.Label4.Size = New System.Drawing.Size(128, 13)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Quantidade no estoque:"
+        Me.Label4.Text = "Quantidade no estoque: *"
         '
         'Txt_valor
         '
@@ -142,9 +142,9 @@ Partial Class Form_CadastrarProdutos
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(3, 110)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 13)
+        Me.Label3.Size = New System.Drawing.Size(67, 13)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Valor (R$): "
+        Me.Label3.Text = "Valor (R$):  *"
         '
         'Txt_Prod
         '
@@ -159,9 +159,9 @@ Partial Class Form_CadastrarProdutos
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(3, 62)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 13)
+        Me.Label2.Size = New System.Drawing.Size(100, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Nome do Produto:"
+        Me.Label2.Text = "Nome do Produto: *"
         '
         'Btn_salvar
         '
@@ -185,7 +185,7 @@ Partial Class Form_CadastrarProdutos
         Me.Text = " "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NUD_qtdProd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -199,8 +199,8 @@ Partial Class Form_CadastrarProdutos
     Friend WithEvents Txt_Prod As TextBox
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents Btn_salvar As Button
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents NUD_qtdProd As NumericUpDown
     Friend WithEvents btn_add_fornecedor As Button
-    Friend WithEvents Label1 As Windows.Forms.Label
+    Friend WithEvents lbl_codProd As Windows.Forms.Label
     Private WithEvents cb_fornecedor As ComboBox
 End Class
