@@ -32,7 +32,7 @@ Public Class Form_CadastrarProdutos
                 MsgBox("Coloque somente valores positivos no estoque")
             Else
                 Try
-                    sql = "INSERT INTO TB_PRODUTOS (COD_PRODUTO,NOME_PROD,VALOR,QUANTIDADE,FORNECEDOR,CATEGORIA) VALUES ('" & Codigo + 1 & "','" & Txt_Prod.Text & "','" & Txt_valor.Text & "','" & NUD_qtdProd.Value & "', " +
+                    sql = "INSERT INTO TB_PRODUTO (COD_PRODUTO,NOME_PROD,VALOR,QUANTIDADE,FORNECEDOR,CATEGORIA) VALUES ('" & Codigo + 1 & "','" & Txt_Prod.Text & "','" & Txt_valor.Text & "','" & NUD_qtdProd.Value & "', " +
                     " '" & cb_fornecedor.Text & "','" & Txt_categoria.Text & "')"
                     rs = db.Execute(sql)
                 Catch ex As System.IO.IOException

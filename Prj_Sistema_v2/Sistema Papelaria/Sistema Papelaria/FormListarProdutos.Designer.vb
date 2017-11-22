@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormListarProdutos
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,70 +20,60 @@ Partial Class FormListarProdutos
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.dgv_prod = New System.Windows.Forms.DataGridView()
-        Me.Cod_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nome_produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Fornecedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.dgv_prod, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btn_add_prod = New System.Windows.Forms.Button()
+        Me.lst_produtos = New System.Windows.Forms.ListBox()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'dgv_prod
+        'GroupBox2
         '
-        Me.dgv_prod.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgv_prod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_prod.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cod_produto, Me.Nome_produto, Me.Valor, Me.Quantidade, Me.Fornecedor})
-        Me.dgv_prod.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_prod.Location = New System.Drawing.Point(0, 0)
-        Me.dgv_prod.Name = "dgv_prod"
-        Me.dgv_prod.Size = New System.Drawing.Size(617, 451)
-        Me.dgv_prod.TabIndex = 0
+        Me.GroupBox2.Controls.Add(Me.lst_produtos)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(251, 252)
+        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Produtos fornecidos:"
         '
-        'Cod_produto
+        'btn_add_prod
         '
-        Me.Cod_produto.HeaderText = "Código do Produto"
-        Me.Cod_produto.Name = "Cod_produto"
+        Me.btn_add_prod.BackColor = System.Drawing.Color.Transparent
+        Me.btn_add_prod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_add_prod.Location = New System.Drawing.Point(12, 270)
+        Me.btn_add_prod.Name = "btn_add_prod"
+        Me.btn_add_prod.Size = New System.Drawing.Size(251, 36)
+        Me.btn_add_prod.TabIndex = 2
+        Me.btn_add_prod.Text = "Selecionar Produto"
+        Me.btn_add_prod.UseVisualStyleBackColor = False
         '
-        'Nome_produto
+        'lst_produtos
         '
-        Me.Nome_produto.HeaderText = "Produto"
-        Me.Nome_produto.Name = "Nome_produto"
-        '
-        'Valor
-        '
-        Me.Valor.HeaderText = "Valor"
-        Me.Valor.Name = "Valor"
-        '
-        'Quantidade
-        '
-        Me.Quantidade.HeaderText = "Quantidade em Estoque"
-        Me.Quantidade.Name = "Quantidade"
-        '
-        'Fornecedor
-        '
-        Me.Fornecedor.HeaderText = "Fornecedor"
-        Me.Fornecedor.Name = "Fornecedor"
+        Me.lst_produtos.FormattingEnabled = True
+        Me.lst_produtos.Location = New System.Drawing.Point(6, 20)
+        Me.lst_produtos.Name = "lst_produtos"
+        Me.lst_produtos.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
+        Me.lst_produtos.Size = New System.Drawing.Size(239, 225)
+        Me.lst_produtos.TabIndex = 0
         '
         'FormListarProdutos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(617, 451)
-        Me.Controls.Add(Me.dgv_prod)
+        Me.ClientSize = New System.Drawing.Size(275, 321)
+        Me.Controls.Add(Me.btn_add_prod)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Name = "FormListarProdutos"
         Me.Text = "Listar Produtos"
-        CType(Me.dgv_prod, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents dgv_prod As DataGridView
-    Friend WithEvents Cod_produto As DataGridViewTextBoxColumn
-    Friend WithEvents Nome_produto As DataGridViewTextBoxColumn
-    Friend WithEvents Valor As DataGridViewTextBoxColumn
-    Friend WithEvents Quantidade As DataGridViewTextBoxColumn
-    Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
+
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents lst_produtos As ListBox
+    Friend WithEvents btn_add_prod As Button
 End Class
