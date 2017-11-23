@@ -68,7 +68,7 @@ Partial Class Form_CadastroUsuario
         Me.Cb_Pergunta.Location = New System.Drawing.Point(10, 250)
         Me.Cb_Pergunta.Name = "Cb_Pergunta"
         Me.Cb_Pergunta.Size = New System.Drawing.Size(252, 21)
-        Me.Cb_Pergunta.TabIndex = 2
+        Me.Cb_Pergunta.TabIndex = 5
         '
         'GroupBox1
         '
@@ -100,7 +100,7 @@ Partial Class Form_CadastroUsuario
         Me.Txt_resposta.Location = New System.Drawing.Point(10, 302)
         Me.Txt_resposta.Name = "Txt_resposta"
         Me.Txt_resposta.Size = New System.Drawing.Size(252, 20)
-        Me.Txt_resposta.TabIndex = 2
+        Me.Txt_resposta.TabIndex = 6
         '
         'Label8
         '
@@ -130,7 +130,7 @@ Partial Class Form_CadastroUsuario
         Me.Cb_TipoConta.Location = New System.Drawing.Point(10, 131)
         Me.Cb_TipoConta.Name = "Cb_TipoConta"
         Me.Cb_TipoConta.Size = New System.Drawing.Size(252, 21)
-        Me.Cb_TipoConta.TabIndex = 9
+        Me.Cb_TipoConta.TabIndex = 2
         '
         'Checkbox_visualizar
         '
@@ -148,7 +148,7 @@ Partial Class Form_CadastroUsuario
         Me.Txt_email.Location = New System.Drawing.Point(10, 84)
         Me.Txt_email.Name = "Txt_email"
         Me.Txt_email.Size = New System.Drawing.Size(252, 20)
-        Me.Txt_email.TabIndex = 2
+        Me.Txt_email.TabIndex = 1
         '
         'Label2
         '
@@ -166,7 +166,7 @@ Partial Class Form_CadastroUsuario
         Me.Txt_RepetirSenha.Name = "Txt_RepetirSenha"
         Me.Txt_RepetirSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Txt_RepetirSenha.Size = New System.Drawing.Size(123, 20)
-        Me.Txt_RepetirSenha.TabIndex = 6
+        Me.Txt_RepetirSenha.TabIndex = 4
         '
         'Label4
         '
@@ -202,7 +202,7 @@ Partial Class Form_CadastroUsuario
         Me.Txt_senha.Name = "Txt_senha"
         Me.Txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Txt_senha.Size = New System.Drawing.Size(123, 20)
-        Me.Txt_senha.TabIndex = 4
+        Me.Txt_senha.TabIndex = 3
         '
         'Btn_Salvar
         '
@@ -210,7 +210,7 @@ Partial Class Form_CadastroUsuario
         Me.Btn_Salvar.Location = New System.Drawing.Point(12, 354)
         Me.Btn_Salvar.Name = "Btn_Salvar"
         Me.Btn_Salvar.Size = New System.Drawing.Size(272, 35)
-        Me.Btn_Salvar.TabIndex = 5
+        Me.Btn_Salvar.TabIndex = 7
         Me.Btn_Salvar.Text = "Salvar"
         Me.Btn_Salvar.UseVisualStyleBackColor = True
         '
@@ -223,6 +223,7 @@ Partial Class Form_CadastroUsuario
         Me.Controls.Add(Me.Btn_Salvar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form_CadastroUsuario"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de Usuário"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

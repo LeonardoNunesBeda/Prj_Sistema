@@ -5,66 +5,62 @@ Imports System.Data.OleDb.OleDbConnection
 Imports System.Data.OleDb
 Public Class FormStatus
     Private Sub FormStatus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Não está carregando nenhum usuário
-        With dgv_dados
-            .Rows.Clear()
-            sql = "SELECT * FROM TB_lOGIN "
-            rs = db.Execute(sql)
-            Do While rs.EOF = False
-                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)
-                rs.MoveNext()
-            Loop
-            cb_selecione.SelectedIndex = 0
-        End With
-    End Sub
-
-    Private Sub Txt_parametro_TextChanged(sender As Object, e As EventArgs) Handles txt_parametro.TextChanged
-        dgv_dados.Rows.Clear()
-        sql = "SELECT * FROM TB_lOGIN WHERE '" & cb_selecione.Text & "' LIKE %'" & txt_parametro.Text & "'%"
-            rs = db.Execute(sql)
-        Do While rs.EOF = False
-            dgv_dados.Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)
-            rs.MoveNext()
-        Loop
-    End Sub
-
-    Private Sub cb_selecione_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_selecione.SelectedIndexChanged
-        gerar_dados()
+        gerar_dados(False)
     End Sub
 
     Private Sub dgv_dados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_dados.CellContentClick
         Try
             With dgv_dados
-                Dim aux = .CurrentRow.Cells(1).Value.ToString
-                If .CurrentRow.Cells(5).Selected = True Then
-                    sql = "UPDATE * from tb_login set STATUS_CONTA ='ATIVA' AND NUM_TENTATIVAS = 3 where ID_USUARIO='" & aux & "'"
+                Dim id_user = .CurrentRow.Cells(0).Value
+                If .CurrentRow.Cells(5).Selected Then
+                    If .CurrentRow.Cells(2).Value = "ATIVA" Then
+                        sql = "UPDATE tb_login set STATUS_CONTA = 'BLOQUEADA', NUM_TENTATIVAS = 0 where ID_USUARIO= " & id_user
+                        MsgBox("Conta bloqueada com sucesso!")
+                    Else
+                        sql = "UPDATE tb_login set STATUS_CONTA = 'ATIVA', NUM_TENTATIVAS = 3 where ID_USUARIO= " & id_user
+                        MsgBox("Conta ativada com sucesso!")
+                    End If
                     rs = db.Execute(sql)
-                    MsgBox("Conta atualizada com sucesso")
-                ElseIf .CurrentRow.Cells(6).Selected = True Then
-                    Dim resp = MsgBox("Deseja Excluir" + vbNewLine + "Id:" & aux & "?", MsgBoxStyle.Question)
+                    gerar_dados(False)
+                End If
+                If .CurrentRow.Cells(6).Selected Then
+                    Dim resp = MsgBox("Deseja excluir o usuário " & .CurrentRow.Cells(1).Value & "?", MsgBoxStyle.YesNo)
                     If resp = MsgBoxResult.Yes Then
-                        sql = "delete * from tb_login where ID_USUARIO= '" & aux & "'"
+                        sql = "DELETE * FROM tb_login WHERE id_usuario = " & id_user
                         rs = db.Execute(sql)
-                        gerar_dados()
+                        gerar_dados(False)
                     End If
                 Else
                     Exit Sub
                 End If
             End With
         Catch ex As Exception
-            MsgBox("Erro: ", ex.Message)
+            MessageBox.Show("Erro: ", ex.Message)
         End Try
     End Sub
 
-    Sub gerar_dados()
+    Sub gerar_dados(Filter As Boolean)
         With dgv_dados
             .Rows.Clear()
-            sql = "SELECT * FROM TB_LOGIN WHERE  '" & (cb_selecione.Text).ToUpper & "' ='%" & (txt_parametro.Text).ToUpper & "%'"
+            If Filter Then
+                sql = "SELECT * FROM TB_LOGIN WHERE " & cb_selecione.Text & " LIKE '%" & txt_parametro.Text.ToUpper & "%'"
+            Else
+                sql = "SELECT * FROM TB_LOGIN"
+            End If
+
             rs = db.Execute(sql)
-            Do While rs.EOF = False
-                dgv_dados.Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)
-                rs.MoveNext()
-            Loop
+            If rs.EOF Then
+                MessageBox.Show("Não foram encontrados resultados!")
+            Else
+                Do While rs.EOF = False
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value)
+                    rs.MoveNext()
+                Loop
+            End If
         End With
+    End Sub
+
+    Private Sub btn_filtrar_Click(sender As Object, e As EventArgs) Handles btn_filtrar.Click
+        gerar_dados(True)
     End Sub
 End Class

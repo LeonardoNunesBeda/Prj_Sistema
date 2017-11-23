@@ -8,22 +8,33 @@
 	<li><b>Obs 3</b>: Caso ache bugs notificar nesse documento classificando em qual form ou código está.</li>
 </ul>
 
-<ul> Form status:
-	<li> Recarregar os dados do dgv após excluir um usuário</li>
-</ul>
+
+
 	
+
 <ul> Form cadastrar produto
-	<li>  Excessão ao clicar no botão adicionar fornecedor </li>
-	<li>  Erro na query cadastro do produto </li>
+	
+<li>  Excessão ao clicar no botão adicionar fornecedor </li>
+	
+<li>  Erro na query cadastro do produto </li>
 </ul>
 <ul> Form Listar fornecedor
-	<li>  Erro de query </li>
+	
+<li>  Erro de query </li>
+
 </ul>
+
 <ul> Form comprar
-	<li>  Ao selecionar o produto ele não está sendo atualizado em tempo real para o outro listbox </li>
+	
+<li>  Ao selecionar o produto ele não está sendo atualizado em tempo real para o outro listbox </li>
 	<li>  Limpar listbox após a compra </li>
 </ul>
 <ul> Form Status compras 
 	<li>  Combo box com valores errados </li>
-	<li>  Clicar no botão filtrar sem ter nada preenchido deve voltar todos os registros </li>
+	
+<li>  Clicar no botão filtrar sem ter nada preenchido deve voltar todos os registros </li>
+
 </ul>
+
+Função alterar (update) nos forms de usuário e produtos
+

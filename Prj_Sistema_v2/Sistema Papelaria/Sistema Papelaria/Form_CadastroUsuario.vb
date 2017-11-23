@@ -52,6 +52,15 @@ Public Class Form_CadastroUsuario
                 Try
                     rs = db.Execute(sql)
                     MessageBox.Show("Dados inseridos com sucesso!", "Sucesso")
+                    Txt_email.Clear()
+                    Txt_RepetirSenha.Clear()
+                    Txt_resposta.Clear()
+                    Txt_senha.Clear()
+                    Txt_user.Clear()
+                    Cb_Pergunta.SelectedIndex = 0
+                    Cb_TipoConta.SelectedIndex = 0
+                    Checkbox_visualizar.Checked = False
+                    Txt_user.Select()
                 Catch ex As Exception
                     MessageBox.Show(ex.Message, "Erro")
                 End Try
