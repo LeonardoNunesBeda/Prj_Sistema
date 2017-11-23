@@ -27,7 +27,7 @@ Public Class Form_CadastrarProdutos
                 MessageBox.Show("Produto cadastrado com sucesso!")
                 Txt_Prod.Clear()
                 Txt_valor.Clear()
-                NUD_qtdProd.Value = 0
+                NUD_qtdProd.Value = 1
                 cmb_categoria.SelectedIndex = -1
                 cb_fornecedor.SelectedIndex = -1
             Catch ex As Exception
@@ -38,11 +38,12 @@ Public Class Form_CadastrarProdutos
 
     Private Sub Carregar_Categorias()
         cb_fornecedor.Items.Clear()
-        sql = "SELECT DISTINCT categoria FROM TB_FORNECEDOR"
+        sql = "SELECT DISTINCT categoria FROM tb_produto"
         rs = db.Execute(sql)
         If Not rs.EOF Then
             While rs.EOF = False
-                cb_fornecedor.Items.Add(rs.Fields(0).Value & " - " & rs.Fields(1).Value)
+                cmb_categoria.Items.Add(rs.Fields(0).Value)
+                rs.MoveNext()
             End While
         End If
     End Sub
@@ -53,7 +54,7 @@ Public Class Form_CadastrarProdutos
         rs = db.Execute(sql)
         If Not rs.EOF Then
             While rs.EOF = False
-                cb_fornecedor.Items.Add(rs.Fields(0).Value & " - " & rs.Fields(1).Value)
+                cb_fornecedor.Items.Add(rs.Fields(0).Value)
                 rs.MoveNext()
             End While
         End If
