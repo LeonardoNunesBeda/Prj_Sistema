@@ -19,8 +19,10 @@ Public Class Form_CadastrarProdutos
             Try
                 sql = "SELECT cnpj FROM tb_fornecedor WHERE nome_forn = '" & cb_fornecedor.Text & "'"
                 rs = db.Execute(sql)
+                Dim cnpj As String = rs.Fields(0).Value
+
                 sql = "INSERT INTO TB_PRODUTO (NOME_PROD,VALOR,QUANTIDADE,CATEGORIA,FORNECEDOR_CNPJ) VALUES ('" & Txt_Prod.Text & "','" & Txt_valor.Text & "','" & NUD_qtdProd.Value & "', " +
-                    " '" & cmb_categoria.Text & "','" & rs.Fields(0).Value & "')"
+                    " '" & cmb_categoria.Text & "','" & cnpj & "')"
                 rs = db.Execute(sql)
                 MessageBox.Show("Produto cadastrado com sucesso!")
                 Txt_Prod.Clear()

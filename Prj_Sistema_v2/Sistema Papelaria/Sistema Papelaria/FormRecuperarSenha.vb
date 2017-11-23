@@ -11,11 +11,12 @@ Public Class FormRecuperarSenha
         If rs.EOF = False Then
             If cmb_pergunta.Text = rs.Fields(4).Value And txt_resp.Text = rs.Fields(5).Value Then
                 MsgBox("Sua senha é: " + (rs.Fields(3).Value).ToString + ".")
+                Close()
             Else
-                MsgBox("Resposta ou pergunta incorreta")
+                MsgBox("Resposta ou pergunta incorreta!")
             End If
         Else
-            MsgBox("Conta Inexistente")
+            MsgBox("Conta Inexistente!")
         End If
     End Sub
 
