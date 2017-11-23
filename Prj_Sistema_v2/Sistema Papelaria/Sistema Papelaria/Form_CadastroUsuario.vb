@@ -6,12 +6,21 @@ Imports System.Data.OleDb
 Public Class Form_CadastroUsuario
 
     Dim ID As Integer = 0
+    Public firstAdmin As Boolean = False
 
     Private Sub Form_CadastroUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()
 
         sql = "SELECT TOP 1 * FROM tb_LOGIN ORDER BY id_usuario DESC"
         rs = db.Execute(sql)
+
+        If firstAdmin Then
+            Cb_TipoConta.SelectedIndex = 0
+            Cb_TipoConta.Text = "ADMINISTRADOR GERAL"
+            Cb_TipoConta.Enabled = False
+            firstAdmin = False
+            Exit Sub
+        End If
 
         'Acrescentando 1 no ID do usuário
         If rs.EOF = False Then

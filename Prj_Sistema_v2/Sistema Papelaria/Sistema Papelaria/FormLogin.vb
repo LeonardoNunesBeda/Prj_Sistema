@@ -12,6 +12,14 @@ Public Class FormLogin
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()
         cmb_acesso.SelectedIndex = 0
+
+        sql = "SELECT COUNT(*) FROM tb_login"
+        rs = db.Execute(sql)
+
+        If rs.Fields(0).Value <= 0 Then
+            Form_CadastroUsuario.firstAdmin = True
+            Form_CadastroUsuario.ShowDialog()
+        End If
     End Sub
 
     Private Sub Btn_entrar_Click(sender As Object, e As EventArgs) Handles btn_entrar.Click
@@ -122,7 +130,7 @@ Public Class FormLogin
                 Else
                     'Carrega tipo de usuário
                     cmb_acesso.SelectedIndex = 0
-                    If rs.Fields(2).Value = "Administrador" Then
+                    If rs.Fields(2).Value = "ADMINISTRADOR" Then
                         cmb_acesso.SelectedIndex = 1
                     End If
 
