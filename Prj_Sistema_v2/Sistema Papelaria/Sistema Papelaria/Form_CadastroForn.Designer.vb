@@ -32,12 +32,7 @@ Partial Class Form_CadastroForn
         Me.Txt_nome = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_salvar = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lst_produtos = New System.Windows.Forms.ListBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.btn_add_prod = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -52,7 +47,7 @@ Partial Class Form_CadastroForn
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 250)
+        Me.GroupBox1.Size = New System.Drawing.Size(230, 220)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Novo Fornecedor"
@@ -131,73 +126,25 @@ Partial Class Form_CadastroForn
         '
         Me.btn_salvar.BackColor = System.Drawing.Color.Transparent
         Me.btn_salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_salvar.Location = New System.Drawing.Point(360, 268)
+        Me.btn_salvar.Location = New System.Drawing.Point(12, 238)
         Me.btn_salvar.Name = "btn_salvar"
-        Me.btn_salvar.Size = New System.Drawing.Size(191, 35)
+        Me.btn_salvar.Size = New System.Drawing.Size(230, 35)
         Me.btn_salvar.TabIndex = 3
         Me.btn_salvar.Text = "Salvar Fornecedor"
         Me.btn_salvar.UseVisualStyleBackColor = False
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.btn_add_prod)
-        Me.GroupBox2.Controls.Add(Me.lst_produtos)
-        Me.GroupBox2.Location = New System.Drawing.Point(248, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(303, 250)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Produtos fornecidos: "
-        '
-        'lst_produtos
-        '
-        Me.lst_produtos.FormattingEnabled = True
-        Me.lst_produtos.Location = New System.Drawing.Point(6, 46)
-        Me.lst_produtos.Name = "lst_produtos"
-        Me.lst_produtos.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
-        Me.lst_produtos.Size = New System.Drawing.Size(286, 147)
-        Me.lst_produtos.TabIndex = 0
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 26)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(134, 13)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Selecione um ou mais:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'btn_add_prod
-        '
-        Me.btn_add_prod.BackColor = System.Drawing.Color.Transparent
-        Me.btn_add_prod.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_add_prod.Image = Global.Sistema_Papelaria.My.Resources.Resources.add_box
-        Me.btn_add_prod.Location = New System.Drawing.Point(6, 199)
-        Me.btn_add_prod.Name = "btn_add_prod"
-        Me.btn_add_prod.Size = New System.Drawing.Size(286, 36)
-        Me.btn_add_prod.TabIndex = 2
-        Me.btn_add_prod.Text = "Cadastrar Novo Produto"
-        Me.btn_add_prod.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_add_prod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_add_prod.UseVisualStyleBackColor = False
         '
         'Form_CadastroForn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(562, 315)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(258, 290)
         Me.Controls.Add(Me.btn_salvar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form_CadastroForn"
         Me.Text = "Cadastro Fornecedor"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -208,12 +155,8 @@ Partial Class Form_CadastroForn
     Friend WithEvents Txt_responsavel As TextBox
     Friend WithEvents Label4 As Windows.Forms.Label
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents lst_produtos As ListBox
     Friend WithEvents btn_salvar As Button
     Friend WithEvents Txt_cnpj As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Txt_tel As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As Windows.Forms.Label
-    Friend WithEvents btn_add_prod As Button
 End Class

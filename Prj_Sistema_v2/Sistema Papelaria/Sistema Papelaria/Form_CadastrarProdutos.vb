@@ -10,6 +10,7 @@ Public Class Form_CadastrarProdutos
     Private Sub Form_CadastrarProdutos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()
         Carregar_Forn()
+        Carregar_Categorias()
     End Sub
 
     Private Sub Btn_salvar_Click(sender As Object, e As EventArgs) Handles Btn_salvar.Click

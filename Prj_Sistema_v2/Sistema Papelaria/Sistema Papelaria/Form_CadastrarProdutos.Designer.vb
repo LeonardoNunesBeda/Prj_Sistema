@@ -186,6 +186,7 @@ Partial Class Form_CadastrarProdutos
         Me.Controls.Add(Me.Btn_salvar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form_CadastrarProdutos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " Cadastrar Produto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

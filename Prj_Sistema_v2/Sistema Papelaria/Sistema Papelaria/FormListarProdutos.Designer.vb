@@ -172,6 +172,7 @@ Partial Class FormListarProdutos
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txt_parametro)
         Me.Name = "FormListarProdutos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Listar Produtos"
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
