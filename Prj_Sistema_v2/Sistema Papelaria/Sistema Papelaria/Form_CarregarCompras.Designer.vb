@@ -24,37 +24,26 @@ Partial Class Form_CarregarCompras
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_CarregarCompras))
         Me.Dgv_Compras = New System.Windows.Forms.DataGridView()
-        Me.Txt_cliente = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Txt_CodigoCompra = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmb_produto = New System.Windows.Forms.ComboBox()
         Me.btn_entrar = New System.Windows.Forms.Button()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Produto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Qtd = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CPF = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_compra = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_vendedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.data = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.metodo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Dgv_Compras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Dgv_Compras
         '
         resources.ApplyResources(Me.Dgv_Compras, "Dgv_Compras")
+        Me.Dgv_Compras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Dgv_Compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Produto, Me.Qtd, Me.CPF})
+        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_compra, Me.id_vendedor, Me.data, Me.metodo, Me.total})
         Me.Dgv_Compras.Name = "Dgv_Compras"
-        '
-        'Txt_cliente
-        '
-        resources.ApplyResources(Me.Txt_cliente, "Txt_cliente")
-        Me.Txt_cliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txt_cliente.Name = "Txt_cliente"
-        '
-        'Label1
-        '
-        resources.ApplyResources(Me.Label1, "Label1")
-        Me.Label1.Name = "Label1"
         '
         'Label2
         '
@@ -89,29 +78,30 @@ Partial Class Form_CarregarCompras
         Me.btn_entrar.Name = "btn_entrar"
         Me.btn_entrar.UseVisualStyleBackColor = True
         '
-        'ID
+        'id_compra
         '
-        resources.ApplyResources(Me.ID, "ID")
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
+        resources.ApplyResources(Me.id_compra, "id_compra")
+        Me.id_compra.Name = "id_compra"
         '
-        'Produto
+        'id_vendedor
         '
-        resources.ApplyResources(Me.Produto, "Produto")
-        Me.Produto.Name = "Produto"
-        Me.Produto.ReadOnly = True
+        resources.ApplyResources(Me.id_vendedor, "id_vendedor")
+        Me.id_vendedor.Name = "id_vendedor"
         '
-        'Qtd
+        'data
         '
-        resources.ApplyResources(Me.Qtd, "Qtd")
-        Me.Qtd.Name = "Qtd"
-        Me.Qtd.ReadOnly = True
+        resources.ApplyResources(Me.data, "data")
+        Me.data.Name = "data"
         '
-        'CPF
+        'metodo
         '
-        resources.ApplyResources(Me.CPF, "CPF")
-        Me.CPF.Name = "CPF"
-        Me.CPF.ReadOnly = True
+        resources.ApplyResources(Me.metodo, "metodo")
+        Me.metodo.Name = "metodo"
+        '
+        'total
+        '
+        resources.ApplyResources(Me.total, "total")
+        Me.total.Name = "total"
         '
         'Form_CarregarCompras
         '
@@ -123,8 +113,6 @@ Partial Class Form_CarregarCompras
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Txt_CodigoCompra)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Txt_cliente)
         Me.Controls.Add(Me.Dgv_Compras)
         Me.Name = "Form_CarregarCompras"
         CType(Me.Dgv_Compras, System.ComponentModel.ISupportInitialize).EndInit()
@@ -134,15 +122,14 @@ Partial Class Form_CarregarCompras
     End Sub
 
     Friend WithEvents Dgv_Compras As DataGridView
-    Friend WithEvents Txt_cliente As TextBox
-    Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents Txt_CodigoCompra As TextBox
     Friend WithEvents Label3 As Windows.Forms.Label
     Private WithEvents cmb_produto As ComboBox
     Private WithEvents btn_entrar As Button
-    Friend WithEvents ID As DataGridViewTextBoxColumn
-    Friend WithEvents Produto As DataGridViewTextBoxColumn
-    Friend WithEvents Qtd As DataGridViewTextBoxColumn
-    Friend WithEvents CPF As DataGridViewTextBoxColumn
+    Friend WithEvents id_compra As DataGridViewTextBoxColumn
+    Friend WithEvents id_vendedor As DataGridViewTextBoxColumn
+    Friend WithEvents data As DataGridViewTextBoxColumn
+    Friend WithEvents metodo As DataGridViewTextBoxColumn
+    Friend WithEvents total As DataGridViewTextBoxColumn
 End Class

@@ -23,6 +23,11 @@ Partial Class FormStatus
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txt_parametro = New System.Windows.Forms.TextBox()
+        Me.btn_filtrar = New System.Windows.Forms.Button()
+        Me.cb_selecione = New System.Windows.Forms.ComboBox()
         Me.id_usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.usuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.status_conta = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -30,11 +35,6 @@ Partial Class FormStatus
         Me.num_tentativas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AlternarStatus = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_parametro = New System.Windows.Forms.TextBox()
-        Me.btn_filtrar = New System.Windows.Forms.Button()
-        Me.cb_selecione = New System.Windows.Forms.ComboBox()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,55 +51,6 @@ Partial Class FormStatus
         Me.dgv_dados.ReadOnly = True
         Me.dgv_dados.Size = New System.Drawing.Size(697, 346)
         Me.dgv_dados.TabIndex = 0
-        '
-        'id_usuario
-        '
-        Me.id_usuario.HeaderText = "ID Usuário"
-        Me.id_usuario.MaxInputLength = 10
-        Me.id_usuario.Name = "id_usuario"
-        Me.id_usuario.ReadOnly = True
-        '
-        'usuario
-        '
-        Me.usuario.HeaderText = "Usuário"
-        Me.usuario.MaxInputLength = 40
-        Me.usuario.Name = "usuario"
-        Me.usuario.ReadOnly = True
-        '
-        'status_conta
-        '
-        Me.status_conta.HeaderText = "Status da Conta"
-        Me.status_conta.MaxInputLength = 10
-        Me.status_conta.Name = "status_conta"
-        Me.status_conta.ReadOnly = True
-        '
-        'tipo_conta
-        '
-        Me.tipo_conta.HeaderText = "Tipo de Conta"
-        Me.tipo_conta.MaxInputLength = 15
-        Me.tipo_conta.Name = "tipo_conta"
-        Me.tipo_conta.ReadOnly = True
-        '
-        'num_tentativas
-        '
-        Me.num_tentativas.HeaderText = "N de Tentativas"
-        Me.num_tentativas.MaxInputLength = 3
-        Me.num_tentativas.Name = "num_tentativas"
-        Me.num_tentativas.ReadOnly = True
-        '
-        'AlternarStatus
-        '
-        Me.AlternarStatus.HeaderText = "Ativar/Bloquear"
-        Me.AlternarStatus.Name = "AlternarStatus"
-        Me.AlternarStatus.ReadOnly = True
-        Me.AlternarStatus.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AlternarStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
-        'Excluir
-        '
-        Me.Excluir.HeaderText = "Excluir"
-        Me.Excluir.Name = "Excluir"
-        Me.Excluir.ReadOnly = True
         '
         'Label12
         '
@@ -151,6 +102,57 @@ Partial Class FormStatus
         Me.cb_selecione.Size = New System.Drawing.Size(223, 21)
         Me.cb_selecione.TabIndex = 16
         '
+        'id_usuario
+        '
+        Me.id_usuario.HeaderText = "ID Usuário"
+        Me.id_usuario.MaxInputLength = 10
+        Me.id_usuario.Name = "id_usuario"
+        Me.id_usuario.ReadOnly = True
+        '
+        'usuario
+        '
+        Me.usuario.HeaderText = "Usuário"
+        Me.usuario.MaxInputLength = 40
+        Me.usuario.Name = "usuario"
+        Me.usuario.ReadOnly = True
+        '
+        'status_conta
+        '
+        Me.status_conta.HeaderText = "Status da Conta"
+        Me.status_conta.MaxInputLength = 10
+        Me.status_conta.Name = "status_conta"
+        Me.status_conta.ReadOnly = True
+        '
+        'tipo_conta
+        '
+        Me.tipo_conta.HeaderText = "Tipo de Conta"
+        Me.tipo_conta.MaxInputLength = 15
+        Me.tipo_conta.Name = "tipo_conta"
+        Me.tipo_conta.ReadOnly = True
+        '
+        'num_tentativas
+        '
+        Me.num_tentativas.HeaderText = "N de Tentativas"
+        Me.num_tentativas.MaxInputLength = 3
+        Me.num_tentativas.Name = "num_tentativas"
+        Me.num_tentativas.ReadOnly = True
+        '
+        'AlternarStatus
+        '
+        Me.AlternarStatus.HeaderText = "Ativar/Bloquear"
+        Me.AlternarStatus.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_block_black_24dp_2x
+        Me.AlternarStatus.Name = "AlternarStatus"
+        Me.AlternarStatus.ReadOnly = True
+        Me.AlternarStatus.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlternarStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'Excluir
+        '
+        Me.Excluir.HeaderText = "Excluir"
+        Me.Excluir.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_delete_forever_black_24dp_2x
+        Me.Excluir.Name = "Excluir"
+        Me.Excluir.ReadOnly = True
+        '
         'FormStatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -176,6 +178,7 @@ Partial Class FormStatus
     Friend WithEvents Label11 As Windows.Forms.Label
     Friend WithEvents txt_parametro As TextBox
     Friend WithEvents btn_filtrar As Button
+    Private WithEvents cb_selecione As ComboBox
     Friend WithEvents id_usuario As DataGridViewTextBoxColumn
     Friend WithEvents usuario As DataGridViewTextBoxColumn
     Friend WithEvents status_conta As DataGridViewTextBoxColumn
@@ -183,5 +186,4 @@ Partial Class FormStatus
     Friend WithEvents num_tentativas As DataGridViewTextBoxColumn
     Friend WithEvents AlternarStatus As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
-    Private WithEvents cb_selecione As ComboBox
 End Class

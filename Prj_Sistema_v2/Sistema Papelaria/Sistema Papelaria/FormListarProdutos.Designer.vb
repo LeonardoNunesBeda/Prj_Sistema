@@ -24,6 +24,11 @@ Partial Class FormListarProdutos
     Private Sub InitializeComponent()
         Me.btn_filtrar = New System.Windows.Forms.Button()
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txt_parametro = New System.Windows.Forms.TextBox()
+        Me.cb_selecione = New System.Windows.Forms.ComboBox()
+        Me.cb_preço = New System.Windows.Forms.CheckBox()
         Me.cod_prod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomeProd = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -31,11 +36,6 @@ Partial Class FormListarProdutos
         Me.Fornecedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AlternarStatus = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_parametro = New System.Windows.Forms.TextBox()
-        Me.cb_selecione = New System.Windows.Forms.ComboBox()
-        Me.cb_preço = New System.Windows.Forms.CheckBox()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,50 +63,6 @@ Partial Class FormListarProdutos
         Me.dgv_dados.ReadOnly = True
         Me.dgv_dados.Size = New System.Drawing.Size(606, 346)
         Me.dgv_dados.TabIndex = 10
-        '
-        'cod_prod
-        '
-        Me.cod_prod.HeaderText = "Código"
-        Me.cod_prod.Name = "cod_prod"
-        Me.cod_prod.ReadOnly = True
-        '
-        'NomeProd
-        '
-        Me.NomeProd.HeaderText = "Nome"
-        Me.NomeProd.Name = "NomeProd"
-        Me.NomeProd.ReadOnly = True
-        '
-        'Valor
-        '
-        Me.Valor.HeaderText = "Valor"
-        Me.Valor.Name = "Valor"
-        Me.Valor.ReadOnly = True
-        '
-        'QtdEstoque
-        '
-        Me.QtdEstoque.HeaderText = "Qtd Estoque"
-        Me.QtdEstoque.Name = "QtdEstoque"
-        Me.QtdEstoque.ReadOnly = True
-        '
-        'Fornecedor
-        '
-        Me.Fornecedor.HeaderText = "Fornecedor"
-        Me.Fornecedor.Name = "Fornecedor"
-        Me.Fornecedor.ReadOnly = True
-        '
-        'AlternarStatus
-        '
-        Me.AlternarStatus.HeaderText = "Editar"
-        Me.AlternarStatus.Name = "AlternarStatus"
-        Me.AlternarStatus.ReadOnly = True
-        Me.AlternarStatus.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AlternarStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
-        'Excluir
-        '
-        Me.Excluir.HeaderText = "Excluir"
-        Me.Excluir.Name = "Excluir"
-        Me.Excluir.ReadOnly = True
         '
         'Label12
         '
@@ -158,6 +114,52 @@ Partial Class FormListarProdutos
         Me.cb_preço.Text = "Ordenar por preço"
         Me.cb_preço.UseVisualStyleBackColor = True
         '
+        'cod_prod
+        '
+        Me.cod_prod.HeaderText = "Código"
+        Me.cod_prod.Name = "cod_prod"
+        Me.cod_prod.ReadOnly = True
+        '
+        'NomeProd
+        '
+        Me.NomeProd.HeaderText = "Nome"
+        Me.NomeProd.Name = "NomeProd"
+        Me.NomeProd.ReadOnly = True
+        '
+        'Valor
+        '
+        Me.Valor.HeaderText = "Valor"
+        Me.Valor.Name = "Valor"
+        Me.Valor.ReadOnly = True
+        '
+        'QtdEstoque
+        '
+        Me.QtdEstoque.HeaderText = "Qtd Estoque"
+        Me.QtdEstoque.Name = "QtdEstoque"
+        Me.QtdEstoque.ReadOnly = True
+        '
+        'Fornecedor
+        '
+        Me.Fornecedor.HeaderText = "Fornecedor"
+        Me.Fornecedor.Name = "Fornecedor"
+        Me.Fornecedor.ReadOnly = True
+        '
+        'AlternarStatus
+        '
+        Me.AlternarStatus.HeaderText = "Editar"
+        Me.AlternarStatus.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_create_black_24dp_2x
+        Me.AlternarStatus.Name = "AlternarStatus"
+        Me.AlternarStatus.ReadOnly = True
+        Me.AlternarStatus.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlternarStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'Excluir
+        '
+        Me.Excluir.HeaderText = "Excluir"
+        Me.Excluir.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_delete_forever_black_24dp_2x
+        Me.Excluir.Name = "Excluir"
+        Me.Excluir.ReadOnly = True
+        '
         'FormListarProdutos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,6 +187,8 @@ Partial Class FormListarProdutos
     Friend WithEvents Label12 As Windows.Forms.Label
     Friend WithEvents Label11 As Windows.Forms.Label
     Friend WithEvents txt_parametro As TextBox
+    Private WithEvents cb_selecione As ComboBox
+    Friend WithEvents cb_preço As CheckBox
     Friend WithEvents cod_prod As DataGridViewTextBoxColumn
     Friend WithEvents NomeProd As DataGridViewTextBoxColumn
     Friend WithEvents Valor As DataGridViewTextBoxColumn
@@ -192,6 +196,4 @@ Partial Class FormListarProdutos
     Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
     Friend WithEvents AlternarStatus As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
-    Private WithEvents cb_selecione As ComboBox
-    Friend WithEvents cb_preço As CheckBox
 End Class

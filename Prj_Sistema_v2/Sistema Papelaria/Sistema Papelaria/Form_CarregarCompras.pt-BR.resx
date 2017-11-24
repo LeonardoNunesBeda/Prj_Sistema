@@ -117,30 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Dgv_Compras.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Dgv_Compras.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 62</value>
   </data>
   <data name="Dgv_Compras.Size" type="System.Drawing.Size, System.Drawing">
-    <value>621, 425</value>
-  </data>
-  <data name="Txt_cliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 25</value>
-  </data>
-  <data name="Txt_cliente.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 20</value>
-  </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="Label1.Text" xml:space="preserve">
-    <value>CPF Cliente:</value>
+    <value>481, 345</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 9</value>
+    <value>270, 8</value>
   </data>
   <data name="Txt_CodigoCompra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 25</value>
+    <value>273, 24</value>
   </data>
   <data name="Txt_CodigoCompra.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
@@ -149,12 +141,11 @@
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 8</value>
+    <value>9, 8</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
@@ -164,6 +155,9 @@
   </data>
   <data name="cmb_produto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="cmb_produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
   </data>
   <data name="cmb_produto.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 21</value>
@@ -175,7 +169,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="btn_entrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 16</value>
+    <value>370, 15</value>
   </data>
   <data name="btn_entrar.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 34</value>
@@ -187,7 +181,10 @@
     <value>ImageBeforeText</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>645, 503</value>
+    <value>505, 419</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Status Compras</value>

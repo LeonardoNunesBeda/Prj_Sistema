@@ -23,6 +23,11 @@ Partial Class FormListarFornecedores
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgv_forn = New System.Windows.Forms.DataGridView()
+        Me.btn_filtrar = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txt_parametro = New System.Windows.Forms.TextBox()
+        Me.cb_selecione = New System.Windows.Forms.ComboBox()
         Me.CNPJ = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Contato = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -30,11 +35,6 @@ Partial Class FormListarFornecedores
         Me.VerProdutos = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.btn_filtrar = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_parametro = New System.Windows.Forms.TextBox()
-        Me.cb_selecione = New System.Windows.Forms.ComboBox()
         CType(Me.dgv_forn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,50 +53,6 @@ Partial Class FormListarFornecedores
         Me.dgv_forn.ReadOnly = True
         Me.dgv_forn.Size = New System.Drawing.Size(607, 348)
         Me.dgv_forn.TabIndex = 0
-        '
-        'CNPJ
-        '
-        Me.CNPJ.HeaderText = "CNPJ"
-        Me.CNPJ.Name = "CNPJ"
-        Me.CNPJ.ReadOnly = True
-        '
-        'Nome_Forn
-        '
-        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
-        Me.Nome_Forn.Name = "Nome_Forn"
-        Me.Nome_Forn.ReadOnly = True
-        '
-        'Contato
-        '
-        Me.Contato.HeaderText = "Telefone"
-        Me.Contato.Name = "Contato"
-        Me.Contato.ReadOnly = True
-        '
-        'Responsavel
-        '
-        Me.Responsavel.HeaderText = "Responsável"
-        Me.Responsavel.Name = "Responsavel"
-        Me.Responsavel.ReadOnly = True
-        '
-        'VerProdutos
-        '
-        Me.VerProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.VerProdutos.HeaderText = "Ver Produtos"
-        Me.VerProdutos.Name = "VerProdutos"
-        Me.VerProdutos.ReadOnly = True
-        Me.VerProdutos.Text = "Ver Produtos"
-        '
-        'Editar
-        '
-        Me.Editar.HeaderText = "Editar"
-        Me.Editar.Name = "Editar"
-        Me.Editar.ReadOnly = True
-        '
-        'Excluir
-        '
-        Me.Excluir.HeaderText = "Excluir"
-        Me.Excluir.Name = "Excluir"
-        Me.Excluir.ReadOnly = True
         '
         'btn_filtrar
         '
@@ -148,6 +104,52 @@ Partial Class FormListarFornecedores
         Me.cb_selecione.Size = New System.Drawing.Size(154, 21)
         Me.cb_selecione.TabIndex = 15
         '
+        'CNPJ
+        '
+        Me.CNPJ.HeaderText = "CNPJ"
+        Me.CNPJ.Name = "CNPJ"
+        Me.CNPJ.ReadOnly = True
+        '
+        'Nome_Forn
+        '
+        Me.Nome_Forn.HeaderText = "Nome do Fornecedor"
+        Me.Nome_Forn.Name = "Nome_Forn"
+        Me.Nome_Forn.ReadOnly = True
+        '
+        'Contato
+        '
+        Me.Contato.HeaderText = "Telefone"
+        Me.Contato.Name = "Contato"
+        Me.Contato.ReadOnly = True
+        '
+        'Responsavel
+        '
+        Me.Responsavel.HeaderText = "Responsável"
+        Me.Responsavel.Name = "Responsavel"
+        Me.Responsavel.ReadOnly = True
+        '
+        'VerProdutos
+        '
+        Me.VerProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.VerProdutos.HeaderText = "Ver Produtos"
+        Me.VerProdutos.Name = "VerProdutos"
+        Me.VerProdutos.ReadOnly = True
+        Me.VerProdutos.Text = "Ver Produtos"
+        '
+        'Editar
+        '
+        Me.Editar.HeaderText = "Editar"
+        Me.Editar.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_create_black_24dp_2x
+        Me.Editar.Name = "Editar"
+        Me.Editar.ReadOnly = True
+        '
+        'Excluir
+        '
+        Me.Excluir.HeaderText = "Excluir"
+        Me.Excluir.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_delete_forever_black_24dp_2x
+        Me.Excluir.Name = "Excluir"
+        Me.Excluir.ReadOnly = True
+        '
         'FormListarFornecedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -169,6 +171,11 @@ Partial Class FormListarFornecedores
 
     End Sub
     Friend WithEvents dgv_forn As DataGridView
+    Friend WithEvents btn_filtrar As Button
+    Friend WithEvents Label12 As Windows.Forms.Label
+    Friend WithEvents Label11 As Windows.Forms.Label
+    Friend WithEvents txt_parametro As TextBox
+    Private WithEvents cb_selecione As ComboBox
     Friend WithEvents CNPJ As DataGridViewTextBoxColumn
     Friend WithEvents Nome_Forn As DataGridViewTextBoxColumn
     Friend WithEvents Contato As DataGridViewTextBoxColumn
@@ -176,9 +183,4 @@ Partial Class FormListarFornecedores
     Friend WithEvents VerProdutos As DataGridViewButtonColumn
     Friend WithEvents Editar As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
-    Friend WithEvents btn_filtrar As Button
-    Friend WithEvents Label12 As Windows.Forms.Label
-    Friend WithEvents Label11 As Windows.Forms.Label
-    Friend WithEvents txt_parametro As TextBox
-    Private WithEvents cb_selecione As ComboBox
 End Class

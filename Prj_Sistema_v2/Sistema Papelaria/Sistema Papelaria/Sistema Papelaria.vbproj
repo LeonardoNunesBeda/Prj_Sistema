@@ -236,6 +236,12 @@
     <Compile Include="FormRecuperarSenha.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSelProdutos.Designer.vb">
+      <DependentUpon>FormSelProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormStatus.Designer.vb">
       <DependentUpon>FormStatus.vb</DependentUpon>
     </Compile>
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRecuperarSenha.resx">
       <DependentUpon>FormRecuperarSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelProdutos.resx">
+      <DependentUpon>FormSelProdutos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStatus.resx">
       <DependentUpon>FormStatus.vb</DependentUpon>
@@ -391,6 +400,10 @@
     <None Include="Resources\add_box.png" />
     <None Include="Resources\lock.png" />
     <None Include="Resources\papelaria.jpg" />
+    <None Include="Resources\ic_delete_forever_black_24dp_2x.png" />
+    <None Include="Resources\ic_clear_black_24dp_2x.png" />
+    <None Include="Resources\ic_create_black_24dp_2x.png" />
+    <None Include="Resources\ic_block_black_24dp_2x.png" />
     <Content Include="Resources\power.png" />
   </ItemGroup>
   <ItemGroup>
