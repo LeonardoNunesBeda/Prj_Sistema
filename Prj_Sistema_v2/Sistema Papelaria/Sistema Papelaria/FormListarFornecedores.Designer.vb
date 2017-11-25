@@ -32,7 +32,7 @@ Partial Class FormListarFornecedores
         Me.Nome_Forn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Contato = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Responsavel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VerProdutos = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.VerProdutos = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgv_forn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,11 +130,10 @@ Partial Class FormListarFornecedores
         '
         'VerProdutos
         '
-        Me.VerProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.VerProdutos.HeaderText = "Ver Produtos"
+        Me.VerProdutos.HeaderText = "VerProdutos"
+        Me.VerProdutos.Image = Global.Sistema_Papelaria.My.Resources.Resources.shop_basq
         Me.VerProdutos.Name = "VerProdutos"
         Me.VerProdutos.ReadOnly = True
-        Me.VerProdutos.Text = "Ver Produtos"
         '
         'Editar
         '
@@ -180,7 +179,7 @@ Partial Class FormListarFornecedores
     Friend WithEvents Nome_Forn As DataGridViewTextBoxColumn
     Friend WithEvents Contato As DataGridViewTextBoxColumn
     Friend WithEvents Responsavel As DataGridViewTextBoxColumn
-    Friend WithEvents VerProdutos As DataGridViewButtonColumn
+    Friend WithEvents VerProdutos As DataGridViewImageColumn
     Friend WithEvents Editar As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
 End Class

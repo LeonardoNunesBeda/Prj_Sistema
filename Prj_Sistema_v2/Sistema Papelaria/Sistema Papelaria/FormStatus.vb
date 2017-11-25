@@ -30,8 +30,12 @@ Public Class FormStatus
                         rs = db.Execute(sql)
                         gerar_dados(False)
                     End If
-                Else
-                    Exit Sub
+                End If
+                If .CurrentRow.Cells(7).Selected Then
+                    Form_CadastroUsuario.editUser = True
+                    Form_CadastroUsuario.editID = .CurrentRow.Cells(0).Value
+                    Form_CadastroUsuario.ShowDialog()
+                    gerar_dados(False)
                 End If
             End With
         Catch ex As Exception
@@ -61,6 +65,9 @@ Public Class FormStatus
     End Sub
 
     Private Sub btn_filtrar_Click(sender As Object, e As EventArgs) Handles btn_filtrar.Click
+        If txt_parametro.Text = "" Or cb_selecione.Text = "" Then
+            Exit Sub
+        End If
         gerar_dados(True)
     End Sub
 End Class

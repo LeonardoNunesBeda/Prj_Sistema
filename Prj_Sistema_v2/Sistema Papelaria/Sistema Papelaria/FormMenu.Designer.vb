@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormMenu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -47,7 +47,6 @@ Partial Class FormMenu
         Me.Btn_Cadastrar = New System.Windows.Forms.Button()
         Me.Btn_Comprar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RelatórioDeComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -103,7 +102,7 @@ Partial Class FormMenu
         '
         'ComprasToolStripMenuItem
         '
-        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarCompraToolStripMenuItem, Me.VerComprasRealizadasToolStripMenuItem, Me.RelatórioDeComprasToolStripMenuItem})
+        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastrarCompraToolStripMenuItem, Me.VerComprasRealizadasToolStripMenuItem})
         Me.ComprasToolStripMenuItem.Image = Global.Sistema_Papelaria.My.Resources.Resources.money
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
         Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
@@ -112,13 +111,13 @@ Partial Class FormMenu
         'CadastrarCompraToolStripMenuItem
         '
         Me.CadastrarCompraToolStripMenuItem.Name = "CadastrarCompraToolStripMenuItem"
-        Me.CadastrarCompraToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.CadastrarCompraToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.CadastrarCompraToolStripMenuItem.Text = "Cadastrar compra"
         '
         'VerComprasRealizadasToolStripMenuItem
         '
         Me.VerComprasRealizadasToolStripMenuItem.Name = "VerComprasRealizadasToolStripMenuItem"
-        Me.VerComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.VerComprasRealizadasToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.VerComprasRealizadasToolStripMenuItem.Text = "Gerar relatório"
         '
         'ToolStripMenuItem13
@@ -263,12 +262,6 @@ Partial Class FormMenu
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Papelaria v1.0 ©"
         '
-        'RelatórioDeComprasToolStripMenuItem
-        '
-        Me.RelatórioDeComprasToolStripMenuItem.Name = "RelatórioDeComprasToolStripMenuItem"
-        Me.RelatórioDeComprasToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
-        Me.RelatórioDeComprasToolStripMenuItem.Text = "Relatório de Compras"
-        '
         'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -321,5 +314,4 @@ Partial Class FormMenu
     Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents RelatórioDeComprasToolStripMenuItem As ToolStripMenuItem
 End Class

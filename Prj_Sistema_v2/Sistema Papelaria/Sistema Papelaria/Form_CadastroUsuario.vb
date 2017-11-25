@@ -7,6 +7,8 @@ Public Class Form_CadastroUsuario
 
     Dim ID As Integer = 0
     Public firstAdmin As Boolean = False
+    Public editUser As Boolean = False
+    Public editID As Integer
 
     Private Sub Form_CadastroUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()
@@ -20,6 +22,18 @@ Public Class Form_CadastroUsuario
             Cb_TipoConta.Enabled = False
             firstAdmin = False
             Exit Sub
+        End If
+
+        If editUser Then
+            sql = "SELECT * FROM tb_login WHERE id_usuario = " & editID
+            rs = db.Execute(sql)
+
+            Txt_user.Text = rs.Fields(1).Value
+            Txt_email.Text = rs.Fields(2).Value
+            Txt_senha.Text = rs.Fields(3).Value
+            Cb_Pergunta.Text = rs.Fields(4).Value
+            Txt_resposta.Text = rs.Fields(5).Value
+            Cb_TipoConta.Text = rs.Fields(7).Value
         End If
 
         'Acrescentando 1 no ID do usuário
@@ -46,12 +60,21 @@ Public Class Form_CadastroUsuario
                 Txt_RepetirSenha.Select()
             Else
                 'Inserção no banco de dados
-                sql = "INSERT INTO tb_login (id_usuario,usuario,email,senha,pergunta_secreta,resposta_secreta,status_conta,tipo_conta,num_tentativas) VALUES " +
-                    "(" & ID & ",'" & Txt_user.Text & "','" & Txt_email.Text & "','" & Txt_senha.Text & "','" & Cb_Pergunta.Text & "','" & Txt_resposta.Text & "','ATIVA'," +
-                " '" & Cb_TipoConta.Text.ToUpper() & "',3)"
+                If editUser Then
+                    sql = "UPDATE tb_login SET usuario = '" & Txt_user.Text & "', email = '" & Txt_email.Text & "', senha = '" & Txt_senha.Text & "', pergunta_secreta = '" & Cb_Pergunta.Text & "', resposta_secreta = '" & Txt_resposta.Text & "', tipo_conta = '" & Cb_TipoConta.Text.ToUpper() & "' WHERE id_usuario = " & editID
+                Else
+                    sql = "INSERT INTO tb_login (id_usuario,usuario,email,senha,pergunta_secreta,resposta_secreta,status_conta,tipo_conta,num_tentativas) VALUES " +
+                        "(" & ID & ",'" & Txt_user.Text & "','" & Txt_email.Text & "','" & Txt_senha.Text & "','" & Cb_Pergunta.Text & "','" & Txt_resposta.Text & "','ATIVA'," +
+                    " '" & Cb_TipoConta.Text.ToUpper() & "',3)"
+                End If
                 Try
                     rs = db.Execute(sql)
-                    MessageBox.Show("Dados inseridos com sucesso!", "Sucesso")
+                    If editUser Then
+                        MessageBox.Show("Dados editados com sucesso!", "Sucesso")
+                    Else
+                        MessageBox.Show("Dados inseridos com sucesso!", "Sucesso")
+                    End If
+
                     Txt_email.Clear()
                     Txt_RepetirSenha.Clear()
                     Txt_resposta.Clear()
@@ -80,6 +103,9 @@ Public Class Form_CadastroUsuario
 
     Private Sub Txt_user_Leave(sender As Object, e As EventArgs) Handles Txt_user.Leave
         'Checar se usuário já existe
+        If editUser Then
+            Exit Sub
+        End If
         sql = "SELECT * FROM TB_LOGIN WHERE USUARIO ='" & Txt_user.Text & "'"
         rs = db.Execute(sql)
         If rs.EOF = False Then

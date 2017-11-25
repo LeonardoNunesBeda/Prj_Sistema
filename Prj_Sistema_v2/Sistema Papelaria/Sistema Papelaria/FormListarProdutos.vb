@@ -1,4 +1,5 @@
 ﻿Public Class FormListarProdutos
+
     Private Sub FormListarProdutos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conecta_banco()
         'Query para listar os produtos
@@ -50,14 +51,16 @@
     Private Sub dgv_dados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_dados.CellContentClick
         Try
             With dgv_dados
-                If .CurrentRow.Cells(5).Selected Then
-                    'Editar registro
+                If .CurrentRow.Cells(6).Selected Then
+                    Form_CadastrarProdutos.editarProd = True
+                    Form_CadastrarProdutos.editId = .CurrentRow.Cells(0).Value
+                    Form_CadastrarProdutos.ShowDialog()
                     gerar_dados(False)
                 End If
-                If .CurrentRow.Cells(6).Selected Then
+                If .CurrentRow.Cells(7).Selected Then
                     Dim resp = MsgBox("Deseja excluir o produto " & .CurrentRow.Cells(1).Value & "?", MsgBoxStyle.YesNo)
                     If resp = MsgBoxResult.Yes Then
-                        sql = "DELETE * FROM tb_produtos WHERE cod_prod = '" & .CurrentRow.Cells(0).Value & "'"
+                        sql = "DELETE * FROM tb_produto WHERE cod_prod = " & .CurrentRow.Cells(0).Value
                         rs = db.Execute(sql)
                         gerar_dados(False)
                     End If

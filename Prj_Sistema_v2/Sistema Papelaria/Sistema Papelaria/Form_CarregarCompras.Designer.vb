@@ -22,6 +22,7 @@ Partial Class Form_CarregarCompras
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_CarregarCompras))
         Me.Dgv_Compras = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -29,20 +30,25 @@ Partial Class Form_CarregarCompras
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmb_produto = New System.Windows.Forms.ComboBox()
         Me.btn_entrar = New System.Windows.Forms.Button()
+        Me.DataSet1 = New Sistema_Papelaria.DataSet1()
+        Me.DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.id_compra = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.id_vendedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.data = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.metodo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Dgv_Compras, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Dgv_Compras
         '
         resources.ApplyResources(Me.Dgv_Compras, "Dgv_Compras")
+        Me.Dgv_Compras.AutoGenerateColumns = False
         Me.Dgv_Compras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Dgv_Compras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_compra, Me.id_vendedor, Me.data, Me.metodo, Me.total})
+        Me.Dgv_Compras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_compra, Me.id_vendedor, Me.data, Me.total})
+        Me.Dgv_Compras.DataSource = Me.DataSet1BindingSource
         Me.Dgv_Compras.Name = "Dgv_Compras"
         '
         'Label2
@@ -78,6 +84,16 @@ Partial Class Form_CarregarCompras
         Me.btn_entrar.Name = "btn_entrar"
         Me.btn_entrar.UseVisualStyleBackColor = True
         '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataSet1BindingSource
+        '
+        Me.DataSet1BindingSource.DataSource = Me.DataSet1
+        Me.DataSet1BindingSource.Position = 0
+        '
         'id_compra
         '
         resources.ApplyResources(Me.id_compra, "id_compra")
@@ -92,11 +108,6 @@ Partial Class Form_CarregarCompras
         '
         resources.ApplyResources(Me.data, "data")
         Me.data.Name = "data"
-        '
-        'metodo
-        '
-        resources.ApplyResources(Me.metodo, "metodo")
-        Me.metodo.Name = "metodo"
         '
         'total
         '
@@ -116,6 +127,8 @@ Partial Class Form_CarregarCompras
         Me.Controls.Add(Me.Dgv_Compras)
         Me.Name = "Form_CarregarCompras"
         CType(Me.Dgv_Compras, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,6 +143,7 @@ Partial Class Form_CarregarCompras
     Friend WithEvents id_compra As DataGridViewTextBoxColumn
     Friend WithEvents id_vendedor As DataGridViewTextBoxColumn
     Friend WithEvents data As DataGridViewTextBoxColumn
-    Friend WithEvents metodo As DataGridViewTextBoxColumn
     Friend WithEvents total As DataGridViewTextBoxColumn
+    Friend WithEvents DataSet1BindingSource As BindingSource
+    Friend WithEvents DataSet1 As DataSet1
 End Class

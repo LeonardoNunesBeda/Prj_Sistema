@@ -43,7 +43,24 @@
         Try
             With dgv_forn
                 If .CurrentRow.Cells(5).Selected Then
-                    'Editar registro
+                    Form_CadastroForn.editarUser = True
+                    Form_CadastroForn.editID = .CurrentRow.Cells(0).Value
+                    Form_CadastroForn.ShowDialog()
+                    gerar_dados(False)
+                End If
+                If .CurrentRow.Cells(4).Selected Then
+                    FormListarProdutos.txt_parametro.Enabled = False
+                    FormListarProdutos.cb_selecione.Enabled = False
+                    sql = "SELECT * FROM tb_produto WHERE fornecedor_cnpj = '" & .CurrentRow.Cells(0).Value & "'"
+                    rs = db.Execute(sql)
+                    With FormListarProdutos.dgv_dados
+                        .Rows.Clear()
+                        Do While rs.EOF = False
+                            .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value)
+                            rs.MoveNext()
+                        Loop
+                    End With
+                    FormListarProdutos.ShowDialog()
                     gerar_dados(False)
                 End If
                 If .CurrentRow.Cells(6).Selected Then

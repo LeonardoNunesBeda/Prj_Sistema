@@ -47,6 +47,26 @@ Sistema Papelaria
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.ic_block_black_24dp_2x">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.ic_clear_black_24dp_2x">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.ic_create_black_24dp_2x">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_Papelaria.My.Resources.Resources.ic_delete_forever_black_24dp_2x">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Sistema_Papelaria.My.Resources.Resources.key1">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

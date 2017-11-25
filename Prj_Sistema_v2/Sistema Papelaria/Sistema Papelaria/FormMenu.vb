@@ -40,6 +40,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub CadastrarCompraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CadastrarCompraToolStripMenuItem.Click
+        Form_CadastrarCompras.user = user
         Form_CadastrarCompras.ShowDialog()
     End Sub
 
@@ -65,6 +66,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub Btn_Comprar_Click(sender As Object, e As EventArgs) Handles Btn_Comprar.Click
+        Form_CadastrarCompras.user = user
         Form_CadastrarCompras.ShowDialog()
     End Sub
 
@@ -89,7 +91,7 @@ Public Class FormMenu
         FormListarProdutos.ShowDialog()
     End Sub
 
-    Private Sub RelatórioDeComprasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelatórioDeComprasToolStripMenuItem.Click
+    Private Sub RelatórioDeComprasToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Form_RelatorioDeCompras.Show()
     End Sub
 

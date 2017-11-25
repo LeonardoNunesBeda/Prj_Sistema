@@ -123,18 +123,22 @@
   <data name="&gt;&gt;total.Name" xml:space="preserve">
     <value>total</value>
   </data>
-  <data name="&gt;&gt;Txt_cliente.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>319, 9</value>
   </data>
+  <data name="&gt;&gt;DataSet1.Name" xml:space="preserve">
+    <value>DataSet1</value>
+  </data>
   <data name="&gt;&gt;Txt_CodigoCompra.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ID.Name" xml:space="preserve">
-    <value>ID</value>
+  <data name="&gt;&gt;DataSet1BindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmb_produto.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Label2.Name" xml:space="preserve">
     <value>Label2</value>
@@ -142,8 +146,8 @@
   <data name="&gt;&gt;Produto.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="metodo.HeaderText" xml:space="preserve">
-    <value>metodo</value>
+  <data name="&gt;&gt;DataSet1.Type" xml:space="preserve">
+    <value>Sistema_Papelaria.DataSet1, DataSet1.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;id_vendedor.Name" xml:space="preserve">
     <value>id_vendedor</value>
@@ -169,11 +173,11 @@
   <data name="&gt;&gt;cmb_produto.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>441, 539</value>
-  </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 9</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Código da Compra</value>
   </data>
   <data name="&gt;&gt;metodo.Name" xml:space="preserve">
     <value>metodo</value>
@@ -181,7 +185,6 @@
   <data name="data.HeaderText" xml:space="preserve">
     <value>data</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -194,8 +197,14 @@
   <data name="&gt;&gt;data.Name" xml:space="preserve">
     <value>data</value>
   </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
   <data name="&gt;&gt;btn_entrar.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Qtd.HeaderText" xml:space="preserve">
     <value>Qtd</value>
@@ -218,8 +227,14 @@
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;Label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Acoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -238,9 +253,6 @@
   </data>
   <data name="Txt_CodigoCompra.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 20</value>
-  </data>
-  <data name="&gt;&gt;Txt_CodigoCompra.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;Txt_CodigoCompra.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -284,6 +296,9 @@
   <data name="Data.HeaderText" xml:space="preserve">
     <value>Data</value>
   </data>
+  <data name="&gt;&gt;id_compra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -302,14 +317,14 @@
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Txt_CodigoCompra.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="Dgv_Compras.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 72</value>
   </data>
   <data name="Produto.HeaderText" xml:space="preserve">
     <value>Produto</value>
+  </data>
+  <data name="&gt;&gt;metodo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -317,23 +332,23 @@
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;Acoes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ID.Name" xml:space="preserve">
+    <value>ID</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Txt_cliente.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;DataSet1BindingSource.Name" xml:space="preserve">
+    <value>DataSet1BindingSource</value>
   </data>
   <data name="Txt_cliente.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Txt_CodigoCompra.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form_CarregarCompras</value>
@@ -362,11 +377,8 @@
   <data name="&gt;&gt;btn_entrar.Name" xml:space="preserve">
     <value>btn_entrar</value>
   </data>
-  <data name="&gt;&gt;metodo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Txt_cliente.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="Txt_CodigoCompra.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;total.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -374,8 +386,8 @@
   <data name="cmb_produto.Items" xml:space="preserve">
     <value>Funcionário</value>
   </data>
-  <data name="&gt;&gt;id_compra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="metodo.HeaderText" xml:space="preserve">
+    <value>metodo</value>
   </data>
   <data name="btn_entrar.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -389,17 +401,17 @@
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 9</value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>Código da Compra</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>441, 539</value>
   </data>
   <data name="cmb_produto.Items1" xml:space="preserve">
     <value>Administrador</value>
   </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cmb_produto.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;Txt_cliente.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="id_vendedor.HeaderText" xml:space="preserve">
     <value>id_vendedor</value>
@@ -421,6 +433,12 @@
   </metadata>
   <metadata name="Qtd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="DataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>118, 17</value>
+  </metadata>
+  <metadata name="DataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="metodo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

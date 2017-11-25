@@ -22,6 +22,7 @@ Partial Class FormListarProdutos
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btn_filtrar = New System.Windows.Forms.Button()
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -29,14 +30,19 @@ Partial Class FormListarProdutos
         Me.txt_parametro = New System.Windows.Forms.TextBox()
         Me.cb_selecione = New System.Windows.Forms.ComboBox()
         Me.cb_preço = New System.Windows.Forms.CheckBox()
+        Me.DataSet1 = New Sistema_Papelaria.DataSet1()
+        Me.DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.cod_prod = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomeProd = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Valor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QtdEstoque = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Categoria = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fornecedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AlternarStatus = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_filtrar
@@ -56,7 +62,7 @@ Partial Class FormListarProdutos
         Me.dgv_dados.AllowUserToDeleteRows = False
         Me.dgv_dados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cod_prod, Me.NomeProd, Me.Valor, Me.QtdEstoque, Me.Fornecedor, Me.AlternarStatus, Me.Excluir})
+        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.cod_prod, Me.NomeProd, Me.Valor, Me.QtdEstoque, Me.Categoria, Me.Fornecedor, Me.AlternarStatus, Me.Excluir})
         Me.dgv_dados.Location = New System.Drawing.Point(12, 62)
         Me.dgv_dados.MultiSelect = False
         Me.dgv_dados.Name = "dgv_dados"
@@ -114,6 +120,16 @@ Partial Class FormListarProdutos
         Me.cb_preço.Text = "Ordenar por preço"
         Me.cb_preço.UseVisualStyleBackColor = True
         '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataSet1BindingSource
+        '
+        Me.DataSet1BindingSource.DataSource = Me.DataSet1
+        Me.DataSet1BindingSource.Position = 0
+        '
         'cod_prod
         '
         Me.cod_prod.HeaderText = "Código"
@@ -137,6 +153,12 @@ Partial Class FormListarProdutos
         Me.QtdEstoque.HeaderText = "Qtd Estoque"
         Me.QtdEstoque.Name = "QtdEstoque"
         Me.QtdEstoque.ReadOnly = True
+        '
+        'Categoria
+        '
+        Me.Categoria.HeaderText = "Categoria"
+        Me.Categoria.Name = "Categoria"
+        Me.Categoria.ReadOnly = True
         '
         'Fornecedor
         '
@@ -177,6 +199,8 @@ Partial Class FormListarProdutos
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Listar Produtos"
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -187,12 +211,15 @@ Partial Class FormListarProdutos
     Friend WithEvents Label12 As Windows.Forms.Label
     Friend WithEvents Label11 As Windows.Forms.Label
     Friend WithEvents txt_parametro As TextBox
-    Private WithEvents cb_selecione As ComboBox
+    Public WithEvents cb_selecione As ComboBox
     Friend WithEvents cb_preço As CheckBox
+    Friend WithEvents DataSet1 As DataSet1
+    Friend WithEvents DataSet1BindingSource As BindingSource
     Friend WithEvents cod_prod As DataGridViewTextBoxColumn
     Friend WithEvents NomeProd As DataGridViewTextBoxColumn
     Friend WithEvents Valor As DataGridViewTextBoxColumn
     Friend WithEvents QtdEstoque As DataGridViewTextBoxColumn
+    Friend WithEvents Categoria As DataGridViewTextBoxColumn
     Friend WithEvents Fornecedor As DataGridViewTextBoxColumn
     Friend WithEvents AlternarStatus As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn

@@ -35,6 +35,7 @@ Partial Class FormStatus
         Me.num_tentativas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AlternarStatus = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgv_dados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,7 +45,7 @@ Partial Class FormStatus
         Me.dgv_dados.AllowUserToDeleteRows = False
         Me.dgv_dados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_usuario, Me.usuario, Me.status_conta, Me.tipo_conta, Me.num_tentativas, Me.AlternarStatus, Me.Excluir})
+        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_usuario, Me.usuario, Me.status_conta, Me.tipo_conta, Me.num_tentativas, Me.AlternarStatus, Me.Excluir, Me.Editar})
         Me.dgv_dados.Location = New System.Drawing.Point(13, 62)
         Me.dgv_dados.MultiSelect = False
         Me.dgv_dados.Name = "dgv_dados"
@@ -153,6 +154,13 @@ Partial Class FormStatus
         Me.Excluir.Name = "Excluir"
         Me.Excluir.ReadOnly = True
         '
+        'Editar
+        '
+        Me.Editar.HeaderText = "Editar"
+        Me.Editar.Image = Global.Sistema_Papelaria.My.Resources.Resources.ic_create_black_24dp_2x
+        Me.Editar.Name = "Editar"
+        Me.Editar.ReadOnly = True
+        '
         'FormStatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -186,4 +194,5 @@ Partial Class FormStatus
     Friend WithEvents num_tentativas As DataGridViewTextBoxColumn
     Friend WithEvents AlternarStatus As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
+    Friend WithEvents Editar As DataGridViewImageColumn
 End Class
